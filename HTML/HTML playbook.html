@@ -1,0 +1,154 @@
+<html>
+<header>
+  <!-- <meta name="twitter:" content=""> read more about attribute -->
+  <meta charset="utf-8">
+  <title>Playbook</title>
+  <!-- For External CSS we use the link to link to our css Playbook.css -->
+  <link rel="stylesheet" href="CSS/CSS playbook.css">
+  <!-- Called Internal CSS
+       Style is used when we want to insert a CSS property to our HTML tags
+       inside our HTML document -->
+       <style media="screen">
+
+         /* hr {} is a selector to affect all hr in the document */
+              hr{
+                /* hr has a default browser value so we need to change those inorder
+                     to modify its style */
+                     border-style: none;
+                     border-top-style: dotted;
+                     border-color: grey;
+                     border-width: 7px;
+                     width: 10%;
+              }
+
+       </style>
+</header>
+
+<!-- Called Inline CSS
+     used to style the HTML tag using the attribute style with css property -->
+<body style="background-color: #BCCC9A;">
+  <!-- hr is horizontal lininig tag
+     with attribute of size and noshade -->
+  <hr size="3" noshade>
+  <!-- Headings from Level h1 to h6 -->
+  <h1>Heading Level 1</h1>
+  <h2>Heading Level 2</h2>
+  <h3>Heading Level 3</h3>
+  <h4>Heading Level 4</h4>
+  <h5>Headong Level 5</h5>
+  <h6>Heading Level 6</h6>
+
+  <!-- br for line breaking or new lin -->
+  <br>
+
+  <!-- Paragraphs-->
+  <p>For Making Paragraphs <em>For Italic</em> <strong>For Bold</strong></p>
+
+  <!-- Unordered List Tag -->
+  <ul>
+    <li>Hello</li>
+    <li>World</li>
+  </ul>
+
+  <!-- Ordered Listing Tag -->
+  <ol>
+    <li>One</li>
+    <li>Two</li>
+  </ol>
+  <!-- img used for putting image on the webpage
+       we can do it from our local machine or
+       refer to another website -->
+
+  <img src="Aman0.jpg" alt="Aman Picture">
+  <!-- From Another Website -->
+  <img src="https://pbs.twimg.com/profile_images/1359549739067400199/sNm-YzRp_400x400.jpg" alt="Aman Picture">
+
+  <!-- Anchor tag and links used to refer to another webpage or
+            to refer to another of your own created page -->
+  <a href="https://twitter.com/FeyissaAmanuel">Amanuel Twitter Account</a>
+  <a href="HTML - Personal Site/index.html"></a>
+
+  <!-- HTML Tabeles -->
+  <table>
+
+    <tr>
+      <!-- th for Creating table Header -->
+      <th> Table Header1</th>
+      <th>Table Header2</th>
+    </tr>
+    <!-- tr For creating Table Row -->
+    <tr>
+      <!-- td For creating table Cell or Data -->
+      <td>Hello World</td>
+      <td>In HTML</td>
+    </tr>
+    <tr>
+      <td>HI </td>
+      <td>In Informal World</td>
+    </tr>
+    <!-- Used for Creating table header and can be manipulated separately-->
+    <thead>
+      <tr>
+        <th> Table Header4</th>
+        <th>Table Header3</th>
+      </tr>
+
+    </thead>
+    <!-- Used for Creating table body and can be manipulated separately-->
+    <tbody>
+      <tr>
+        <td>Hello World</td>
+        <td>In HTML</td>
+      </tr>
+      <tr>
+        <td>HI </td>
+        <td>In Informal World</td>
+      </tr>
+    </tbody>
+    <!-- Used for Creating table footer and can be manipulated separately-->
+    <tfoot>
+
+    </tfoot>
+  </table>
+
+  <!-- For Creating Forms -->
+  <form class="" action="index.html" method="post">
+    <!-- Label is used for Output Text for the User Before Input -->
+    <label>Name:</label>
+    <!-- For the User to Input A Value -->
+    <input type="text" name="" value=""><br>
+    <label>For button</label>
+    <input type="button" name=""><br>
+    <label>List of Groceries</label><br>
+    <label>Apple</label>
+    <input type="checkbox" name="" value="">
+    <label>Banana</label>
+    <input type="checkbox" name="" value="">
+    <label>Coconut</label>
+    <input type="checkbox" name="" value=""><br>
+    <label>Color Selector: </label>
+    <input type="color" name="" value=""><br>
+    <label>Date/Month/Year</label>
+    <input type="date" name="" value=""><br>
+    <label>For Email:</label>
+    <input type="email" name="" value=""><br>
+    <label>Password:</label>
+    <input type="password" name="" value=""><br>
+    <label>Male</label>
+    <input type="radio" name="" value="">
+    <label>Female</label>
+    <input type="radio" name="" value=""><br>
+    <input type="submit" name="">
+  </form>
+
+<!-- we use the class attribute to specify the image with its classname -->
+  <img class="burger" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/hamburger_1f354.png" alt="burger">
+  <!-- we use the id attribute to specify the p with its idname -->
+  <p id="hello-id">Hello World</p>
+  <!-- we use the multiple class attribute to specify the p with its classname
+       we use space between the classname to create a new variable -->
+  <p class="p1 p2">Sup</p>
+</body>
+
+
+</html>
