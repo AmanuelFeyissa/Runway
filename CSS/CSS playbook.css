@@ -1,0 +1,30 @@
+/********************** Tag Selector *********************/
+h1 {
+  color: #BCCC9A;
+}
+h2 {
+  color: grey;
+}
+h3 {
+  color: #950101;
+}
+
+/********************** Class Selector *********************/
+
+/* class is used to specfiy and manipulate specific kind of tag outof the same
+   used in the html document
+   or to manipulate different kind of tags with a same css properies but same
+   class name */
+
+   .burger {
+     background-color: red;
+   }
+
+   .p1 {
+     background-color: white;
+   }
+
+/********************** id Selector *********************/
+  #hello-id {
+    color: gold;
+  }
