@@ -120,3 +120,38 @@ h4{
     /* Other way is usiing the visibility property and setting it to hidden */
     visibility: hidden;
   }
+
+/*********************** CSS positioning *********************/
+
+/* Static is the default position of the element set by the rules of HTML */
+  h3{
+    position: static;
+  }
+
+/* Relative is the position relative to the default or static position */
+  h3 {
+    position: relative;
+/* The we can set its next coordinates by using the four properies */
+    left: 10px;
+    right: 20px;
+    top: 10px;
+    bottom: 10px;
+  }
+
+/* Absolute is adding the element position relative to its parent element */
+  h3{
+    position: absolute;
+/* The we can set its next coordinates by using the four properies */
+        left: 10px;
+        right: 20px;
+        top: 10px;
+        bottom: 10px;
+  }
+
+/* Fixed position is used when we want make the element fixed to one position
+   even if we are scrolling mostly used to create a nav bar */
+   h3{
+     position: fixed;
+     /* it will stay on the top whatever happens */
+     top: 0;
+   }
