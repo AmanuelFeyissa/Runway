@@ -92,3 +92,31 @@ h4{
      margin-bottom: 30px;
      margin-left: 40px;
    }
+
+/*********************** Box Model *********************/
+
+/* Display Block is elements that take up full width */
+  h2{
+    /* h p div lists and form are by default block */
+    display:block;
+  }
+
+/* Display inline is elements that doesnt take up full width and can put
+   texts side by side */
+   span{
+     /* span anchor img are by default inline */
+     display: inline;
+   }
+
+/* Display inline-block is the best of both worlds */
+  h1{
+    /* img is a inline-block element */
+    display: inline-block;
+  }
+
+/* Display None gets rid of the element as if it didnt exist */
+  h6{
+    display: none;
+    /* Other way is usiing the visibility property and setting it to hidden */
+    visibility: hidden;
+  }
