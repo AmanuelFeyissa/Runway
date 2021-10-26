@@ -8,6 +8,14 @@ h2 {
 h3 {
   color: #950101;
 }
+/* the heading tag has a default margin to override that we use the below */
+h6{
+  margin-top: 0;
+}
+/* to edit our div section */
+div{
+  background-color: #E4F9F5;
+}
 
 /********************** Class Selector *********************/
 
