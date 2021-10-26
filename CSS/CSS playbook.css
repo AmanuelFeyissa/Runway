@@ -5,9 +5,7 @@ h1 {
 h2 {
   color: grey;
 }
-h3 {
-  color: #950101;
-}
+
 /* the heading tag has a default margin to override that we use the below */
 h6{
   margin-top: 0;
@@ -36,3 +34,61 @@ div{
   #hello-id {
     color: gold;
   }
+
+/********************** Box Model *********************/
+
+/* To Affect the element's Width and height */
+  h4{
+    width: 20px;
+    height: 10px;
+  }
+
+/* Padding is giving space between the text and the edge of the element */
+  h4{
+    /* Affects All on four sides */
+    padding: 20px;
+
+    /* Affects the four sides with a specific unit in CLOCKWISE
+       top right bottom left */
+    padding: 10px 10px 20px 10px;
+
+    /* Affects each sides with their corresponding name */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+  }
+
+/* Border is what beautifies and affects what is outside of the element */
+
+h4{
+  /* Affects All on four sides */
+  border: 20px;
+
+  /* Affects the four sides with a specific unit in CLOCKWISE
+     top right bottom left */
+  border: 10px 10px 20px 10px;
+
+  /* Affects each sides with their corresponding name */
+  border-top: 10px;
+  border-right: 20px;
+  border-bottom: 30px;
+  border-left: 40px;
+}
+
+/* Margin is the one that affects the space between the two elements that are
+   present in adocument */
+   h4{
+     /* Affects All on four sides */
+     margin: 20px;
+
+     /* Affects the four sides with a specific unit in CLOCKWISE
+        top right bottom left */
+     margin: 10px 10px 20px 10px;
+
+     /* Affects each sides with their corresponding name */
+     margin-top: 10px;
+     margin-right: 20px;
+     margin-bottom: 30px;
+     margin-left: 40px;
+   }
