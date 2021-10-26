@@ -1,8 +1,15 @@
 /********************** Tag Selector *********************/
+body{
+  /* For Centering any element that doesnt have its width altered */
+  text-align: center;
+}
 h1 {
   color: #BCCC9A;
 }
 h2 {
+  width: 10px;
+  /* For Centering any element that does have its width altered */
+  margin: 0 auto 0 auto;
   color: grey;
 }
 
