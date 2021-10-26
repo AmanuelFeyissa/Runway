@@ -2,6 +2,9 @@
 body{
   /* For Centering any element that doesnt have its width altered */
   text-align: center;
+
+  /* Using the font family we have chosen and the fallback */
+  font-family: 'Nunito', sans-serif;
 }
 h1 {
   color: #BCCC9A;
