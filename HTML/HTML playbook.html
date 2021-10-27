@@ -10,33 +10,32 @@
   <!-- To add a favicon we need to link the icon on our folder to our html
        document -->
   <link rel="icon" href="favicon.ico">
-  
-<!-- Embedding font family from google fonts -->
+
+  <!-- Embedding font family from google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Nunito:wght@200&display=swap" rel="stylesheet">
 
   <!-- Called Internal CSS
        Style is used when we want to insert a CSS property to our HTML tags
        inside our HTML document -->
-       <style media="screen">
-
-         /* hr {} is a selector to affect all hr in the document */
-              hr{
-                /* hr has a default browser value so we need to change those inorder
+  <style media="screen">
+    /* hr {} is a selector to affect all hr in the document */
+    hr {
+      /* hr has a default browser value so we need to change those inorder
                      to modify its style */
-                     border-style: none;
-                     border-top-style: dotted;
-                     border-color: grey;
-                     border-width: 7px;
-                     width: 10%;
-              }
-
-       </style>
+      border-style: none;
+      border-top-style: dotted;
+      border-color: grey;
+      border-width: 7px;
+      width: 10%;
+    }
+  </style>
 </header>
 
 <!-- Called Inline CSS
      used to style the HTML tag using the attribute style with css property -->
+
 <body style="background-color: #BCCC9A;">
   <!-- hr is horizontal lininig tag
      with attribute of size and noshade -->
@@ -158,13 +157,18 @@
     <input type="submit" name="">
   </form>
 
-<!-- we use the class attribute to specify the image with its classname -->
+  <!-- we use the class attribute to specify the image with its classname -->
   <img class="burger" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/hamburger_1f354.png" alt="burger">
   <!-- we use the id attribute to specify the p with its idname -->
   <p id="hello-id">Hello World</p>
   <!-- we use the multiple class attribute to specify the p with its classname
        we use space between the classname to create a new variable -->
   <p class="p1 p2">Sup</p>
+
+  <!-- If we dont have a content yet but just want to fill it with content like
+       words, sentence and paragraphs we use the website https://loremipsum.io/
+     -->
+  <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
 </body>
 
 

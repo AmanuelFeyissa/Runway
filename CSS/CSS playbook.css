@@ -1,14 +1,15 @@
 /********************** Tag Selector *********************/
-body{
+body {
   /* For Centering any element that doesnt have its width altered */
   text-align: center;
-
   /* Using the font family we have chosen and the fallback */
   font-family: 'Nunito', sans-serif;
 }
+
 h1 {
   color: #BCCC9A;
 }
+
 h2 {
   width: 10px;
   /* For Centering any element that does have its width altered */
@@ -17,68 +18,61 @@ h2 {
 }
 
 /* the heading tag has a default margin to override that we use the below */
-h6{
+h6 {
   margin-top: 0;
 }
+
 /* to edit our div section */
-div{
+div {
   background-color: #E4F9F5;
 }
 
 /********************** Class Selector *********************/
-
 /* class is used to specfiy and manipulate specific kind of tag outof the same
    used in the html document
    or to manipulate different kind of tags with a same css properies but same
    class name */
+.burger {
+  background-color: red;
+}
 
-   .burger {
-     background-color: red;
-   }
-
-   .p1 {
-     background-color: white;
-   }
+.p1 {
+  background-color: white;
+}
 
 /********************** id Selector *********************/
-  #hello-id {
-    color: gold;
-  }
+#hello-id {
+  color: gold;
+}
 
 /********************** Box Model *********************/
-
 /* To Affect the element's Width and height */
-  h4{
-    width: 20px;
-    height: 10px;
-  }
+h4 {
+  width: 20px;
+  height: 10px;
+}
 
 /* Padding is giving space between the text and the edge of the element */
-  h4{
-    /* Affects All on four sides */
-    padding: 20px;
-
-    /* Affects the four sides with a specific unit in CLOCKWISE
+h4 {
+  /* Affects All on four sides */
+  padding: 20px;
+  /* Affects the four sides with a specific unit in CLOCKWISE
        top right bottom left */
-    padding: 10px 10px 20px 10px;
-
-    /* Affects each sides with their corresponding name */
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-  }
+  padding: 10px 10px 20px 10px;
+  /* Affects each sides with their corresponding name */
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
 
 /* Border is what beautifies and affects what is outside of the element */
-
-h4{
+h4 {
   /* Affects All on four sides */
   border: 20px;
-
   /* Affects the four sides with a specific unit in CLOCKWISE
      top right bottom left */
   border: 10px 10px 20px 10px;
-
   /* Affects each sides with their corresponding name */
   border-top: 10px;
   border-right: 20px;
@@ -88,80 +82,76 @@ h4{
 
 /* Margin is the one that affects the space between the two elements that are
    present in adocument */
-   h4{
-     /* Affects All on four sides */
-     margin: 20px;
-
-     /* Affects the four sides with a specific unit in CLOCKWISE
+h4 {
+  /* Affects All on four sides */
+  margin: 20px;
+  /* Affects the four sides with a specific unit in CLOCKWISE
         top right bottom left */
-     margin: 10px 10px 20px 10px;
-
-     /* Affects each sides with their corresponding name */
-     margin-top: 10px;
-     margin-right: 20px;
-     margin-bottom: 30px;
-     margin-left: 40px;
-   }
+  margin: 10px 10px 20px 10px;
+  /* Affects each sides with their corresponding name */
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
 
 /*********************** Display property *********************/
-
 /* Display Block is elements that take up full width */
-  h2{
-    /* h p div lists and form are by default block */
-    display:block;
-  }
+h2 {
+  /* h p div lists and form are by default block */
+  display: block;
+}
 
 /* Display inline is elements that doesnt take up full width and can put
    texts side by side */
-   span{
-     /* span anchor img are by default inline */
-     display: inline;
-   }
+span {
+  /* span anchor img are by default inline */
+  display: inline;
+}
 
 /* Display inline-block is the best of both worlds */
-  h1{
-    /* img is a inline-block element */
-    display: inline-block;
-  }
+h1 {
+  /* img is a inline-block element */
+  display: inline-block;
+}
 
 /* Display None gets rid of the element as if it didnt exist */
-  h6{
-    display: none;
-    /* Other way is usiing the visibility property and setting it to hidden */
-    visibility: hidden;
-  }
+h6 {
+  display: none;
+  /* Other way is usiing the visibility property and setting it to hidden */
+  visibility: hidden;
+}
 
 /*********************** CSS positioning *********************/
-
 /* Static is the default position of the element set by the rules of HTML */
-  h3{
-    position: static;
-  }
+h3 {
+  position: static;
+}
 
 /* Relative is the position relative to the default or static position */
-  h3 {
-    position: relative;
-/* The we can set its next coordinates by using the four properies */
-    left: 10px;
-    right: 20px;
-    top: 10px;
-    bottom: 10px;
-  }
+h3 {
+  position: relative;
+  /* The we can set its next coordinates by using the four properies */
+  left: 10px;
+  right: 20px;
+  top: 10px;
+  bottom: 10px;
+}
 
 /* Absolute is adding the element position relative to its parent element */
-  h3{
-    position: absolute;
-/* The we can set its next coordinates by using the four properies */
-        left: 10px;
-        right: 20px;
-        top: 10px;
-        bottom: 10px;
-  }
+h3 {
+  position: absolute;
+  /* The we can set its next coordinates by using the four properies */
+  left: 10px;
+  right: 20px;
+  top: 10px;
+  bottom: 10px;
+}
 
 /* Fixed position is used when we want make the element fixed to one position
    even if we are scrolling mostly used to create a nav bar */
-   h3{
-     position: fixed;
-     /* it will stay on the top whatever happens */
-     top: 0;
-   }
+h3 {
+  position: fixed;
+  /* it will stay on the top whatever happens */
+  top: 0;
+}
