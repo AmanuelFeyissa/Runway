@@ -172,4 +172,14 @@ h3{
 /* Line height is used to give more spacing in our h p or even body
    usually assigned with a single digit value without unit */
    line-height: 2;
-  } 
+  }
+
+/*********************** CSS float and clear *********************/
+
+/* floating is used to wrap a text, img or a next to each other */
+  h3{
+    float: left;
+
+/* clear is the anti float it doesnt allow a tag to be next to it */
+    clear: right;
+  }
