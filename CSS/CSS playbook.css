@@ -168,4 +168,8 @@ h3{
      1em = 16px = 100% = 1rem
   */
   font-size: 2.5rem;
-}
+
+/* Line height is used to give more spacing in our h p or even body
+   usually assigned with a single digit value without unit */
+   line-height: 2;
+  } 
