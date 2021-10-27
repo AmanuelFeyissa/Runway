@@ -155,3 +155,17 @@ h3 {
   /* it will stay on the top whatever happens */
   top: 0;
 }
+
+/*********************** CSS font sizing *********************/
+
+/* We use the font-sizing property for sizing */
+h3{
+  font-size: 20px;
+  /* When sizing we can set the value by pixels or persentile or em or rem
+     px is used for always but
+     persentile and em are more recommended
+     rem is the best it doesnt inherit the size of the parent RECOMMENDED
+     1em = 16px = 100% = 1rem
+  */
+  font-size: 2.5rem;
+}
