@@ -183,3 +183,5 @@ h3{
 /* clear is the anti float it doesnt allow a tag to be next to it */
     clear: right;
   }
+
+  /*********************** CSS FlexBox and Grid *********************/
