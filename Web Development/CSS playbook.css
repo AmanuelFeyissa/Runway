@@ -185,3 +185,10 @@ h3{
   }
 
   /*********************** CSS FlexBox and Grid *********************/
+    h3{
+      display: flex;
+    }
+
+    h2{
+      display: grid;
+    }
