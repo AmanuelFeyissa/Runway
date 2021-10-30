@@ -184,9 +184,33 @@ h3{
     clear: right;
   }
 
-  /*********************** CSS FlexBox and Grid *********************/
+  /*********************** CSS FlexBox *********************/
+  /* flexbox only works if the items we want to manipulate are the child of that
+     tag like h3 */
     h3{
+    /* To declare a flexbox */
       display: flex;
+    /* Flex direction is by default row or left to right */
+    flex-direction: row;
+    /* Main axis means left to right
+       cross axis means top to bottom */
+
+    /* justify content handles spacing on the main axis or left to right
+       by default it is set to flex-start */
+       justify-content: flex-start;
+
+       /* align items handles spacing on the cross axis or left to right
+          by default it is set to strech */
+       align-items: stretch;
+
+       /* to position items we can use the margin tag with auto to work */
+       margin-left: auto;
+
+       /* Wrap: by default the flexbox is set to do his job in one row or
+          one column[nowrap] but we can change that by using flex-wrap */
+       flex-wrap: wrap;
+
+       
     }
 
     h2{
