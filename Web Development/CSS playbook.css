@@ -225,6 +225,55 @@ h3{
          order: 1; /* if it more than 0 the item comes last */
     }
 
+      /*********************** CSS Grid *********************/
     h2{
+    /* To declare a flexbox */
       display: grid;
+
+    /* shorthand way of specifing/creating rows and columns is */
+        grid-template: 100px 20px; /* FIRST ROWS THEN COLUMNS */
+    /* To specify/create a column */
+      grid-template-columns: 100px 20px 100px;
+    /* To specify/create a rows */
+      grid-template-rows: 20px 50px;
+    /* To simplify the value part of making rows and columns we use the repeat
+       property
+       fr means fraction units USED FOR RESPONSIVE DESIGN
+       repeat(3, 1fr) 3 is the amount of rows or columns, 1fr is the Value
+    */
+      grid-template: repeat(3, 1fr) repeat(2, 1fr); /* ROWS THEN COLUMNS */
+
+    /* To give gaps between grids we use grid-gap */
+      grid-gap: 2px;
+
+    /* to position items on a grid we use */
+    /* Means that it starts from column 1 and ends at 3
+       in place of 3 we can use -1 or span
+       -1 means the last column
+       span 2 means span 2 columns
+    */
+       grid-column-start: 1;
+       grid-column-end: 3;
+    /* to position items on a grid we use */
+    /* Means that it starts from row 1 and ends at 3
+       in place of 3 we can use -1 or span
+      -1 means the last rows
+      span 2 means span 2 rows
+           */
+      grid-row-start: 1;
+      grid-row-end: 3;
+
+      /* Template areas are best for making/laying out grid quickly
+         to use it we first need to define it in the parent class */
+         grid-template-areas: "h h"
+                              "m m"
+                              "f f";
+      /* h m f represents a string name to be assigned in the child class
+         then we assign it by using the grid-area property in the child class
+         */
+         .something{
+           grid-area: h; /* or m or f */
+         }
+
+
     }
