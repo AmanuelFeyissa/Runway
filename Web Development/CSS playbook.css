@@ -210,7 +210,19 @@ h3{
           one column[nowrap] but we can change that by using flex-wrap */
        flex-wrap: wrap;
 
-       
+       /* Flex Property, is a shorthand for 3 different properties that handle
+          the grow, the shrink and the basis of an item depending on the device
+          */
+          flex: 1 1 0; /* flex-grow, flex-shrink, flex-basis */
+
+          flex-grow: 1; /* grows the item according to the device */
+          flex-shrink: 1; /* shrinks the item according to the device */
+          flex-basis: 0; /* sets the base width for the item */
+
+       /* Order: this property enables us to change the order of our items */
+         order: -1; /* if it less than 0 the item comes first */
+         order: 0; /* if it is 0 the item comes stays as is DEFAULT */
+         order: 1; /* if it more than 0 the item comes last */
     }
 
     h2{
