@@ -275,5 +275,22 @@ h3{
            grid-area: h; /* or m or f */
          }
 
+      /* auto-fit property lets us add column/rows fit in the given
+         space automatically */
+         grid-template-columns: repeat(auto-fit, 100px);
+
+      /* minmax property lets us define the minimum and maximum condition of
+         the grid */
+         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+      /* Implicit Rows: if we put auto-fit and minmax in our column defination
+          to balance out the column we will put the grid-auto-rows property */
+        grid-auto-rows: 100px; /* we don't need to use grid-template-rows */
+
+      /* if there are holes in our grid we can correct that using the
+          grid-auto-flow */
+         grid-auto-flow: dense;    
+
+
 
     }
