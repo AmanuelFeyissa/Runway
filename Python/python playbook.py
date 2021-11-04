@@ -184,3 +184,42 @@ if conditon == 0 not condition1 == 1:
 # the Modulo operator is used to display the remainder of a number
 # % is the Sign
   3 % 2 # Output is 1
+
+############################################################
+# Random Module: is a module that has alot of functions for randomization of numbers
+# List: is a data structure used when we want to store multiple similar data at once
+# Nested List: is alist within a list
+# Index Error: is an error that we get if we try to call a list item that doesnt exist
+############################################################
+
+#Random Module
+# First we need to import at the top
+import random #At the top
+
+# To create random whole numbers
+rand_int = random.randint(1, 10) # range from 1 to 10 includes 1 and 10
+
+# To create random float numbers
+rand_float = random.random() # range from 0 to 1 but doesnt include 1
+rand_float * 5 # expands the float random range to 0 to 5 doesnt include 5
+
+# List
+fruits = [item1, item2]
+fruits[0] # Outputs item1
+# We can override items by simply replacing their index
+fruits[0] = "Alex" # Overrides item1
+# To add items we use the append() function
+fruits.append("Aman") # Adds the new item after the last One
+# To add multiple item we use the extend() function
+fruits.extend(["Hello", "HI", "JA"])
+# split() func is used to separate an input/data into lists
+names = sinput.split(", ") # separates the items around the comma and space into lists
+# To get the total number of items in a list we use the len() func
+len(fruits) # Output 6 which is the total number of items on the list
+# To get random item from a list we use the choice() func in the random Module
+random.choice(fruits)
+
+# Nested list
+ fruits = ["Apple", "Orange", "Banana"]
+ vegis = ["Carrot", "Lettuce"]
+ food = [fruits, vegis] # Nested List
