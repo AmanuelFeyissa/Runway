@@ -114,3 +114,73 @@ round(2.666666, 2) # 2 after comma shows the number of digits it should round up
 variable = 0
 # f String
 print(f"The Score is {variable}") # mixing string and integer
+
+############################################################
+#Control Flow
+# if else: gives a choice for the user, condition to make a decision
+# comparision operators: to work with the if else in the condition section
+# Nested if: if else statment within a if else statment
+# Multiple if: multiple if statments within the same indentation
+# Logical Operators: combining different conditons under one statment
+############################################################
+
+#if else
+if conditon1: # Needs a colon to indicate the conditon has ended
+    do this   # Needs to be indented
+else:
+    do this
+
+# Comparision operators
+# >     Greater than
+# <     Less than
+# >=    Greater than or equal to
+# <=    Less than or equal to
+# ==    Equal to
+# !=    Not Equal to
+
+#Nested if
+if condition:
+    if condition:
+        do this
+    else:
+        do this
+else:
+    do this
+
+# elif is used when we have multiple conditions
+# We can use as many elif as we want
+if condition:
+    do this
+elif conditon:
+    do this
+elif conditon:
+    do this
+else:
+    do this
+
+# Multiple if
+# We can use as many if as we want
+if conditon:
+    do this
+if condition:
+    do this
+if conditon:
+    do this
+
+# Logical Operators: and or not keywords to combine conditions
+if conditon == 0 and conditon1 == 1:
+    do this
+if conditon == 0 or conditon2 == 1:
+    do this
+if conditon == 0 not condition1 == 1:
+    do this
+
+# count() function is used to count a character in as string
+  "Hello".count("H") # Output will be 1
+# lower() function is used to change a string to a lower Case
+  "HELLO".lower() # Output will be hello
+  name = "AMAN"
+  name.lower() # Output will be aman
+# the Modulo operator is used to display the remainder of a number
+# % is the Sign
+  3 % 2 # Output is 1
