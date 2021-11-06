@@ -223,3 +223,34 @@ random.choice(fruits)
  fruits = ["Apple", "Orange", "Banana"]
  vegis = ["Carrot", "Lettuce"]
  food = [fruits, vegis] # Nested List
+
+############################################################
+# For Loop with Python List: using list as a range to go through and manipulate it
+# For Loop and the range() function: for loop with a range function is the standard wau of using loops
+# range(): is a function for setting the range of the variable from and to
+############################################################
+
+# For loop with Python list
+fruits = ["Apple", "Orange", "Banana"]
+for fruit in fruits:
+    print(fruit) # Prints Apple Orange Banana in Order
+
+for value in variable:
+    do something
+
+# For Loop with range()
+for score in range(1, 5): #1 to 4 doesnt include 5
+    do something
+# range() has an exra parameter we can give it that makes the value increment by what we want
+for value in range(1, 101, 2): # increments by 2. 1 3 5 7 9 ..
+    do something
+
+# sum() function is used to ad numbers that are in the list or numbers
+num [1, 6, 7, 8]
+sum(num) # Output 22
+# min func is used to determine the minimum of a number in a list
+min(num) # Output 1
+# max() func is used to determine the maximum of a numberin a list
+max(num) # Output 8
+# .suffle() function is inside the random module, it is used to shuffle the item in a list
+random.shuffle(num) # suffles it randomly eg [6, 1, 8, 7]
