@@ -254,3 +254,22 @@ min(num) # Output 1
 max(num) # Output 8
 # .suffle() function is inside the random module, it is used to shuffle the item in a list
 random.shuffle(num) # suffles it randomly eg [6, 1, 8, 7]
+
+############################################################
+# Functions: are what we use when there is a reusable code we want to call
+# Indentation: is like a curly brace in python and spaces are recommended than tabs
+# While loops: is a loop that continues to work unles certaain condition is met
+############################################################
+
+# Built in Functions
+print() max()   len() # and Much more
+sum()   min()
+# Making your own functions
+def function_name(): # def is used to create a function and function name has brackets and colon at the end
+    do something
+
+function_name() # calling the function
+
+# While loops
+while something_is_true: # something_is_true is the condition
+    do something
