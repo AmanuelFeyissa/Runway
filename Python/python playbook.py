@@ -265,7 +265,6 @@ random.shuffle(num) # suffles it randomly eg [6, 1, 8, 7]
 # Keyword Argument: is assigning the parameter to the arument when being called
 # Indentation: is like a curly brace in python and spaces are recommended than tabs
 # While loops: is a loop that continues to work unles certain condition is met
-
 ############################################################
 
 # Built in Functions
@@ -309,3 +308,50 @@ math.ceil(3.4) # Rounds the variable upwards which means to 4
 fruits.index() # Ususally works better with for loops
 for fruit in fruits:
     x = fruits.index(fruit) # gives the current index of the list item
+
+############################################################\
+# Dictionaries: is a way to group related data with the key and values and manipulate them
+# Nesting: Putting list inside a list, Dictionaries inside Dictionaries,Dictionaries inside lists and visce versa
+############################################################
+
+#Dictionaries
+{key: value} #synax
+new_dic = {"name": "Amanuel", "age": 22} # declaring a Dictionary
+new_dic["name"] # Calling item in the Dictionary with key, outputs Amanuel
+# Adding item later in our code
+new_dic["sex"] = "male" # added
+# To add an empty Dictionary
+new_dic = {}
+# To wipe an entire Dictionary
+new_dic = {} # only works if it had been declared before and data had been added
+# To edit an item in Dictionary
+new_dic["name"] = "Hello" # Amanuel changed to Hello
+# To loop through a Dictionary
+for key in new_dic:
+    print(key) # prints out the key not the value
+    print(new_dic[key]) # prints out the value
+
+# Nesting
+# Nesting lists inside another lists
+new_list = ["Aman", "New", ["Hello", "Hi"]]
+# Nesting list in a Dictionary
+some_dic = {
+    "France": ["Paris", "Lille"],
+    "Germany": ["Berlin", "Hamburg"]
+}
+# Nesting Dictionary IN Dictionary
+some_dic = {
+    {"Berlin": "Capital City", "Hamburg": "Beautiful city"}
+    {"France": "Capital City"}
+}
+# Nesting Dictionary in a list
+some_list = [
+    {
+    key: value,
+    key: value,
+    },
+    {
+    key: value,
+    key: value,
+    }
+]
