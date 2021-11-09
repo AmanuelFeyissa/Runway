@@ -257,8 +257,15 @@ random.shuffle(num) # suffles it randomly eg [6, 1, 8, 7]
 
 ############################################################
 # Functions: are what we use when there is a reusable code we want to call
+# Function with inputs: we can create parameters and pass aruments to our function to do various things
+# other than expecting it to do the same thing all the time
+# Parameter: is the name of the data that is beign passed in
+# Argument: is the actual value of the data
+# Positional Argument: is when the position of where the parameter being passed matters
+# Keyword Argument: is assigning the parameter to the arument when being called
 # Indentation: is like a curly brace in python and spaces are recommended than tabs
-# While loops: is a loop that continues to work unles certaain condition is met
+# While loops: is a loop that continues to work unles certain condition is met
+
 ############################################################
 
 # Built in Functions
@@ -270,6 +277,35 @@ def function_name(): # def is used to create a function and function name has br
 
 function_name() # calling the function
 
+#Function with inputs
+def function_name(parameter1, parameter2): # we name the parameters under paranthesis
+    do something parameter1
+    do something parameter2
+
+function_name(5, 7) #Calling with passing arument of 5 and 7
+
+# Positional Argument
+def function_name(parameter1, parameter2):
+    do something parameter1
+    do something parameter2
+
+function_name(5, 6) # Positional Argument
+# Keyword Argument
+def function_name(parameter1, parameter2):
+    do something parameter1
+    do something parameter2
+
+function_name(parameter1 = 5, parameter2 = 6) # Keyword Argument
+
 # While loops
 while something_is_true: # something_is_true is the condition
     do something
+
+#Math module
+import math
+math.ceil(3.4) # Rounds the variable upwards which means to 4
+
+# index() method is used to find the exact place or index of an item and manipulate it
+fruits.index() # Ususally works better with for loops
+for fruit in fruits:
+    x = fruits.index(fruit) # gives the current index of the list item
