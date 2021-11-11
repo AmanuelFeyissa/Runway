@@ -355,3 +355,56 @@ some_list = [
     key: value,
     }
 ]
+
+############################################################
+# Function with outputs: gives an output of somekind using the return keyword
+# return: is a keyword that is used to output something from a function
+# Multiple return value: we can use multiple return values in conditions to terminate if conditon is met
+# Docstrings: is a way for us to describe and explain our function for other programmers when it is Called
+# Prints Vs Return: the difference is return functions can be used as an argument for another function to pass data
+# where as print functions can not
+# Recursion: is a concept of calling a function within itself
+############################################################
+
+# Function with Output
+def my_function():
+    return 4 - 2 # When called function value is assigned to the function in this case 2
+my_function() # is equal to 2
+
+# Multiple return values
+def my_function(num1, num2):
+    if num1 == 3:
+        return      # returns the word "None" if condition is met
+    if num2 == 2:
+        return 4 - 8
+    return num1 - num2
+
+# Docstrings
+def my_function():
+    """ It describes what the functions going to do in
+        a multi line comment way and also can be used as a multi line Comment
+        but it is not recommended """
+my_function() # the explanation is highlighted by the compiler when called
+
+# Returns used as another function Argument
+def new_func(num1, num2):
+    return num1 - num2
+
+new_value = new_func(5, 7)
+def my_function(num3, num4):
+    return num3 * num4
+
+answer = my_function(new_func, num4) # Passed as an argument
+
+# Recursion
+def my_function():
+    print("Hello")
+    if some_var == True:
+        do soemthing
+    elif some_var == another_condition:
+        my_function() # MUST BE USED CAREFULLY IF NOT IT CAN CAUSE AN INFINITE LOOP
+# .title(): this function is used to make a case title for any strings
+# like capitalizing first character of every word
+new = "hEllp"
+answer = new.title()
+print(answer) # output Hellp
