@@ -408,3 +408,31 @@ def my_function():
 new = "hEllp"
 answer = new.title()
 print(answer) # output Hellp
+
+############################################################
+# Local Scope: is when we declare a variable or other things like function inside or in indented
+# as a child of a function, and is only accessable inside that function
+# Global Scope: is when we declare a varible or other things like function outside or in our file
+# and is accessable by everything
+# Modifying the global scope: if we wish to modify a global scope inside our local scope we use the keyword global
+# It is RECOMMENDED to not modify a global scope because we might produce some bugs
+# Constant: is a varible that is declared in a global scope and we usually declare it that way because
+# it is used for a constant variables that will not be changed throughout the code file like pi
+# it is RECOMMENDED to use all caps when we want to define a constant varible to destinguesh it from other varibles
+############################################################
+
+# Local Scope
+def function():
+    var = "Hello" # var is a local varible because it is declared inside a function
+
+# Global scope
+var = "Hi" # var is a global varible because it is declared in indentation free or outside any function
+
+# Modifying Global Scope
+var = "Hi"
+def function():
+    global var      # Modifying global varible inside a function or inside a local scope
+    var = "name"
+
+# Constants
+PI = 3.1415 # usually defined at the top of our code and should be things that are constamt throughout our code
