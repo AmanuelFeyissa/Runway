@@ -436,3 +436,49 @@ def function():
 
 # Constants
 PI = 3.1415 # usually defined at the top of our code and should be things that are constamt throughout our code
+
+############################################################
+# Debugging: the process of removing bugs/errors from our code
+############################################################
+
+# Technique #1:
+# Describe the Problem:
+# untangling the problem in detail and understanding it properly
+
+# Technique #2:
+# Reproduce the bug:
+# if a bug happens occasionaly when we test iur code, make that error permanent and then
+# tackle the code and fix it so it doesnt happen again
+
+# Technique #3:
+# Play Computer:
+# is a concept of thinking like the computer to know how it works and how it executes our code
+# if we run into a bug, visualizing every line like a computer and going through it is goo way to fix a bug
+
+# Technique #4:
+# Fix the errors:
+# when we get an error message from our compiler or our editor, we should read the message and figure out
+# what went wrong and try to fix it.
+# IF we dont understant the error message then copy and search it on google
+
+# Technique #5:
+# Using print() function:
+# by usuing the print() we can check where we went wrong by printing every variable that wwe thing is the problem
+
+# Technique #6:
+# Use a debugger
+# debugger is a software that helps us visualize every step of the process of our code when we run it,
+# it helps us find the problem easly by going through each step one by one
+# Thonny and pythontutor.cpm are the two best examples
+
+# Technique #7:
+# Take a break
+
+# Technique #8:
+# Run the code more often, when we think we have changed the code we should run it to check for bugs
+
+# Technique #9:
+# Ask a friend
+
+# Technique #10:
+# Search on stackoverflow or if you dont find any answers then ask it yourself
