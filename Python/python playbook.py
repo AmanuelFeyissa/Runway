@@ -493,4 +493,36 @@ PI = 3.1415 # usually defined at the top of our code and should be things that a
 
 car = carBlueprint() # creating an object
 # car is the object
-# carBlueprint() is the class 
+# carBlueprint() is the class
+
+# creating a class
+class Car:
+    print("Hello")
+
+vehcile_1 = Car() # creating the object
+
+# if we wish to leave the class or function empty temporarly
+class Car:
+    pass # we use this keyword
+
+# Creating an attribute from the class
+user_1.username = "Hello" # .username is the attribute name and "Hello" is the value
+
+# Constructor
+class Car:
+    def __init__(self): # __init__ is used to create a Constructor and self is used to represent the object assosicated with the class
+        print("Hello")
+
+# To set the attribute in the Constructor
+class Car:
+    def __init__(self, seat): # seat is a parameter we created
+        self.seat = seat # self.seat is the attribute of the Constructor and seat is the vlaue being passed
+        self.following = 0 # default attribute, an attribute that is displayed when used
+user_1 = Car(5) # we must pass an argument if our Constructor has a parameter, 5 is the argument being passed
+
+# Adding methods to class
+class Car:
+    def my_function(self): # adding a method is the same as creating a function but we need to have the self in our parameter
+        hello.username = "Heyo"
+
+user_1.my_function() # calling a function from class car 
