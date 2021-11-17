@@ -482,3 +482,15 @@ PI = 3.1415 # usually defined at the top of our code and should be things that a
 
 # Technique #10:
 # Search on stackoverflow or if you dont find any answers then ask it yourself
+
+############################################################
+# Object Oriented Programming: is called object oriented because we modele our code based on a real life objects
+# Attribute: is a variable that is assosicated with a modeled object
+# Method: is a function that a particular modeled object can do
+# Class: is a blueprint that is used to create an object
+# Object: is the code that is created based on the blueprint which is the class
+############################################################
+
+car = carBlueprint() # creating an object
+# car is the object
+# carBlueprint() is the class 
