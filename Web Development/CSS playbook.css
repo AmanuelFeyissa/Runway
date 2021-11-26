@@ -122,6 +122,7 @@ h6 {
   visibility: hidden;
 }
 
+/* Focus on positioning, flex box, grid */
 /*********************** CSS positioning *********************/
 /* Static is the default position of the element set by the rules of HTML */
 h3 {
