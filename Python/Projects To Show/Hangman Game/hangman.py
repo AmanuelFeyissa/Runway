@@ -5,6 +5,7 @@ from hangman_word_list import words
 
 print(logo)
 game_is_finished = False
+# To reduce the lives by one everytime it gets it wrong
 lives = len(stages) - 1
 
 chosen_word = random.choice(words)
@@ -15,6 +16,7 @@ for _ in range(word_length):
     display += "_"
 
 while not game_is_finished:
+    # lower() is to make the input to lower case
     guess = input("Guess a letter: ").lower()
 
     if guess in display:
@@ -32,7 +34,7 @@ while not game_is_finished:
         if lives == 0:
             game_is_finished = True
             print("You lose.")
-
+    
     if not "_" in display:
         game_is_finished = True
         print("You win.")
