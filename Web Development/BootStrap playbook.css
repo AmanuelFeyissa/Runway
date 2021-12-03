@@ -3,6 +3,11 @@
 /* We can use a starting template to get started with Bootstrap */
 /* We can link it directly to the bootstrap website to work with Bootstrap or */
 /* We can download the framework and use it directly from our local machine */
+
+
+/* to install bootstrap there are few ways to do it */
+/* First one is linking bootstrap CDN from the from the bootstrap website */
+/* Second is to copy the starter template from the website */
 /* Bootstrap starter template */
 
 <!doctype html>
@@ -27,3 +32,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+
+/* Third way is download the bootstrap source code and link it to our web site */
+<link rel="stylesheet" href="/*bootstrap adress */">
