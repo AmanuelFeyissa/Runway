@@ -1,7 +1,10 @@
+# list called alphabet for later use of encription and decription
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
+# finction that has a parameter of the starting text, number of shift amount and the direction of the cipher
 def caesar(start_text, shift_amount, cipher_direction):
   end_text = ""
+  # if direction of cipher is equal to decode then set shift amount to shift amount * -1
   if cipher_direction == "decode":
     shift_amount *= -1
   for char in start_text:
@@ -20,6 +23,7 @@ print(logo)
 should_end = False
 while not should_end:
 
+  # prompt to user
   direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
   text = input("Type your message:\n").lower()
   shift = int(input("Type the shift number:\n"))
