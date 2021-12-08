@@ -1,7 +1,9 @@
+/*  font size and color for the heading of the site*/
 h1 {
   font-size: 20px;
   color: red;
 }
+/* Background color for the image*/
 img{
   background-color: red;
 }
