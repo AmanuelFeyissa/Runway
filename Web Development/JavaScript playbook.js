@@ -5,5 +5,5 @@
 // React native is a platform that uses the JavaScript language to build mobile application
 // Starting code
 <script>
-
+//Put code here
 </script>
