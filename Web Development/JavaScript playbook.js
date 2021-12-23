@@ -4,6 +4,6 @@
 //And for backend the most popular one is Node.js
 // React native is a platform that uses the JavaScript language to build mobile application
 // Starting code
-<script>
+<script> // bug to fix
 //Put code here
 </script>
