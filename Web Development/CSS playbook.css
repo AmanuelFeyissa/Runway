@@ -123,6 +123,7 @@ h6 {
 }
 
 /* Focus on positioning, flex box, grid */
+/* Going to use in portfolio */
 /*********************** CSS positioning *********************/
 /* Static is the default position of the element set by the rules of HTML */
 h3 {
@@ -227,6 +228,7 @@ h3{
     }
 
       /*********************** CSS Grid *********************/
+      /* Going to use in portfolio */
     h2{
     /* To declare a flexbox */
       display: grid;
