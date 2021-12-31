@@ -1,8 +1,8 @@
-/* Bootstrap is a framework for styling a web page */
-/* The framework contains loads of pre written code from programmers all over the world */
+/* Bootstrap is a frontend library for styling a web page */
+/* The library contains loads of pre written code from programmers all over the world */
 /* We can use a starting template to get started with Bootstrap */
 /* We can link it directly to the bootstrap website to work with Bootstrap or */
-/* We can download the framework and use it directly from our local machine */
+/* We can download the library and use it directly from our local machine */
 
 
 /* to install bootstrap there are few ways to do it */
@@ -37,4 +37,4 @@
 <link rel="stylesheet" href="/*bootstrap adress */">
 
 /* WireFraming: is quick sketching of what you are about to do before going into implementation */
-/* Mock up: is designing the webpage with high detail from colors to grid and everything 
+/* Mock up: is designing the webpage with high detail from colors to grid and everything
