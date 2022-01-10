@@ -3,8 +3,8 @@
 
 ############################################################
 # Printing to console we use the print() function
-# We can use the double quotation inside the parentesis or
-# single quote interchangebly esepecially if we are quoting
+# We can use the double quotation inside the parenthesis or
+# single quote interchangeably especially if we are quoting
 # something in out code we should use single quoting
 # No Semi Colon Needed at the end
 ############################################################
@@ -13,14 +13,14 @@ print("Hello World")
 
 ############################################################
 # To start a new line we use \n
-# To concatinate or combine strings we use + sign
+# To concatenate or combine strings we use + sign
 ############################################################
 
 print("Hello" + "World\n")
 
 ############################################################
 # To get input from the user we use the input() function
-# input function has a prompt displayer and after the input
+# input function has a prompt displayed and after the input
 # it will be replaced by the data that was put in
 ############################################################
 
@@ -36,7 +36,7 @@ len("AMAN") #OUTPUT 4
 # Variables: To create variables we simply write out a
 # letter, a word which Obey the variable naming rules
 # RULES: A number can never come FIRST
-# RULES: No space bettwen letters or words when making a variable
+# RULES: No space between letters or words when making a variable
 # RULES: we should not use keywords or function names
 # RULES: we can use underscore for combining words
 # Make sure your variable names are meaningful and readable
@@ -51,7 +51,7 @@ name = "Aman" # Overridden by the string aman
 # String : is a data type that consists of string of characters
 # Integer: is data type that represents whole numbers
 # Float: is a data type that represents decimal numbers
-# Boolean: is a data Type definded to represent the True or False of a condition
+# Boolean: is a data Type defined to represent the True or False of a condition
 ############################################################
 
 "Hello World" # string
@@ -63,7 +63,7 @@ name = "Aman" # Overridden by the string aman
 123.456 # Float
 
 # Boolean values true and false start with uppercase letters
-# Case sensetive
+# Case sensitive
 True
 False
 
@@ -84,11 +84,11 @@ int("123") # changes it to integer
 float("100.5") # changes it to float
 
 ############################################################
-# Mathematical Operations: are combining multiple operators and oprands to calc
+# Mathematical Operations: are combining multiple operators and operands to calc
 # Order of Precedence: PEMDASLR
 # PEMDASLR parenthesis, exponent, multiplication, division, addition, subtraction
-# In devision and multiplication, adding and subtraction the order of importance is
-# the same so we use the LR (left to right) to calculate which cimes first
+# In division and multiplication, adding and subtraction the order of importance is
+# the same so we use the LR (left to right) to calculate which comes first
 ############################################################
 
 3 + 4
@@ -118,19 +118,19 @@ print(f"The Score is {variable}") # mixing string and integer
 ############################################################
 #Control Flow
 # if else: gives a choice for the user, condition to make a decision
-# comparision operators: to work with the if else in the condition section
-# Nested if: if else statment within a if else statment
-# Multiple if: multiple if statments within the same indentation
-# Logical Operators: combining different conditons under one statment
+# comparison operators: to work with the if else in the condition section
+# Nested if: if else statement within a if else statement
+# Multiple if: multiple if statements within the same indentation
+# Logical Operators: combining different conditions under one statement
 ############################################################
 
 #if else
-if conditon1: # Needs a colon to indicate the conditon has ended
+if conditon1: # Needs a colon to indicate the condition has ended
     do this   # Needs to be indented
 else:
     do this
 
-# Comparision operators
+# Comparison operators
 # >     Greater than
 # <     Less than
 # >=    Greater than or equal to
@@ -186,9 +186,9 @@ if conditon == 0 not condition1 == 1:
   3 % 2 # Output is 1
 
 ############################################################
-# Random Module: is a module that has alot of functions for randomization of numbers
+# Random Module: is a module that has a lot of functions for randomization of numbers
 # List: is a data structure used when we want to store multiple similar data at once
-# Nested List: is alist within a list
+# Nested List: is list within a list
 # Index Error: is an error that we get if we try to call a list item that doesnt exist
 ############################################################
 
@@ -241,7 +241,7 @@ for value in variable:
 # For Loop with range()
 for score in range(1, 5): #1 to 4 doesnt include 5
     do something
-# range() has an exra parameter we can give it that makes the value increment by what we want
+# range() has an extra parameter we can give it that makes the value increment by what we want
 for value in range(1, 101, 2): # increments by 2. 1 3 5 7 9 ..
     do something
 
@@ -250,21 +250,21 @@ num [1, 6, 7, 8]
 sum(num) # Output 22
 # min func is used to determine the minimum of a number in a list
 min(num) # Output 1
-# max() func is used to determine the maximum of a numberin a list
+# max() func is used to determine the maximum of a number in a list
 max(num) # Output 8
-# .suffle() function is inside the random module, it is used to shuffle the item in a list
-random.shuffle(num) # suffles it randomly eg [6, 1, 8, 7]
+# .shuffle() function is inside the random module, it is used to shuffle the item in a list
+random.shuffle(num) # shuffles it randomly eg [6, 1, 8, 7]
 
 ############################################################
 # Functions: are what we use when there is a reusable code we want to call
-# Function with inputs: we can create parameters and pass aruments to our function to do various things
+# Function with inputs: we can create parameters and pass arguments to our function to do various things
 # other than expecting it to do the same thing all the time
-# Parameter: is the name of the data that is beign passed in
+# Parameter: is the name of the data that is begin passed in
 # Argument: is the actual value of the data
 # Positional Argument: is when the position of where the parameter being passed matters
-# Keyword Argument: is assigning the parameter to the arument when being called
+# Keyword Argument: is assigning the parameter to the argument when being called
 # Indentation: is like a curly brace in python and spaces are recommended than tabs
-# While loops: is a loop that continues to work unles certain condition is met
+# While loops: is a loop that continues to work unless certain condition is met
 ############################################################
 
 # Built in Functions
@@ -277,11 +277,11 @@ def function_name(): # def is used to create a function and function name has br
 function_name() # calling the function
 
 #Function with inputs
-def function_name(parameter1, parameter2): # we name the parameters under paranthesis
+def function_name(parameter1, parameter2): # we name the parameters under parenthesis
     do something parameter1
     do something parameter2
 
-function_name(5, 7) #Calling with passing arument of 5 and 7
+function_name(5, 7) #Calling with passing argument of 5 and 7
 
 # Positional Argument
 def function_name(parameter1, parameter2):
@@ -305,13 +305,13 @@ import math
 math.ceil(3.4) # Rounds the variable upwards which means to 4
 
 # index() method is used to find the exact place or index of an item and manipulate it
-fruits.index() # Ususally works better with for loops
+fruits.index() # Usually works better with for loops
 for fruit in fruits:
     x = fruits.index(fruit) # gives the current index of the list item
 
 ############################################################\
 # Dictionaries: is a way to group related data with the key and values and manipulate them
-# Nesting: Putting list inside a list, Dictionaries inside Dictionaries,Dictionaries inside lists and visce versa
+# Nesting: Putting list inside a list, Dictionaries inside Dictionaries,Dictionaries inside lists and vice versa
 ############################################################
 
 #Dictionaries
@@ -357,9 +357,9 @@ some_list = [
 ]
 
 ############################################################
-# Function with outputs: gives an output of somekind using the return keyword
+# Function with outputs: gives an output of some kind using the return keyword
 # return: is a keyword that is used to output something from a function
-# Multiple return value: we can use multiple return values in conditions to terminate if conditon is met
+# Multiple return value: we can use multiple return values in conditions to terminate if condition is met
 # Docstrings: is a way for us to describe and explain our function for other programmers when it is Called
 # Prints Vs Return: the difference is return functions can be used as an argument for another function to pass data
 # where as print functions can not
@@ -405,37 +405,37 @@ def my_function():
         my_function() # MUST BE USED CAREFULLY IF NOT IT CAN CAUSE AN INFINITE LOOP
 # .title(): this function is used to make a case title for any strings
 # like capitalizing first character of every word
-new = "hEllp"
+new = "hElp"
 answer = new.title()
-print(answer) # output Hellp
+print(answer) # output Help
 
 ############################################################
 # Local Scope: is when we declare a variable or other things like function inside or in indented
-# as a child of a function, and is only accessable inside that function
-# Global Scope: is when we declare a varible or other things like function outside or in our file
-# and is accessable by everything
+# as a child of a function, and is only accessible inside that function
+# Global Scope: is when we declare a variable or other things like function outside or in our file
+# and is accessible by everything
 # Modifying the global scope: if we wish to modify a global scope inside our local scope we use the keyword global
 # It is RECOMMENDED to not modify a global scope because we might produce some bugs
-# Constant: is a varible that is declared in a global scope and we usually declare it that way because
+# Constant: is a variable that is declared in a global scope and we usually declare it that way because
 # it is used for a constant variables that will not be changed throughout the code file like pi
-# it is RECOMMENDED to use all caps when we want to define a constant varible to destinguesh it from other varibles
+# it is RECOMMENDED to use all caps when we want to define a constant variable to distinguish it from other variables
 ############################################################
 
 # Local Scope
 def function():
-    var = "Hello" # var is a local varible because it is declared inside a function
+    var = "Hello" # var is a local variable because it is declared inside a function
 
 # Global scope
-var = "Hi" # var is a global varible because it is declared in indentation free or outside any function
+var = "Hi" # var is a global variable because it is declared in indentation free or outside any function
 
 # Modifying Global Scope
 var = "Hi"
 def function():
-    global var      # Modifying global varible inside a function or inside a local scope
+    global var      # Modifying global variable inside a function or inside a local scope
     var = "name"
 
 # Constants
-PI = 3.1415 # usually defined at the top of our code and should be things that are constamt throughout our code
+PI = 3.1415 # usually defined at the top of our code and should be things that are constant throughout our code
 
 ############################################################
 # Debugging: the process of removing bugs/errors from our code
@@ -447,7 +447,7 @@ PI = 3.1415 # usually defined at the top of our code and should be things that a
 
 # Technique #2:
 # Reproduce the bug:
-# if a bug happens occasionaly when we test iur code, make that error permanent and then
+# if a bug happens occasionally when we test iur code, make that error permanent and then
 # tackle the code and fix it so it doesnt happen again
 
 # Technique #3:
@@ -459,16 +459,16 @@ PI = 3.1415 # usually defined at the top of our code and should be things that a
 # Fix the errors:
 # when we get an error message from our compiler or our editor, we should read the message and figure out
 # what went wrong and try to fix it.
-# IF we dont understant the error message then copy and search it on google
+# IF we don't understand the error message then copy and search it on google
 
 # Technique #5:
 # Using print() function:
-# by usuing the print() we can check where we went wrong by printing every variable that wwe thing is the problem
+# by using the print() we can check where we went wrong by printing every variable that wwe thing is the problem
 
 # Technique #6:
 # Use a debugger
 # debugger is a software that helps us visualize every step of the process of our code when we run it,
-# it helps us find the problem easly by going through each step one by one
+# it helps us find the problem easily by going through each step one by one
 # Thonny and pythontutor.cpm are the two best examples
 
 # Technique #7:
@@ -481,11 +481,11 @@ PI = 3.1415 # usually defined at the top of our code and should be things that a
 # Ask a friend
 
 # Technique #10:
-# Search on stackoverflow or if you dont find any answers then ask it yourself
+# Search on stackoverflow or if you don't find any answers then ask it yourself
 
 ############################################################
-# Object Oriented Programming: is called object oriented because we modele our code based on a real life objects
-# Attribute: is a variable that is assosicated with a modeled object
+# Object Oriented Programming: is called object oriented because we model our code based on a real life objects
+# Attribute: is a variable that is associated with a modeled object
 # Method: is a function that a particular modeled object can do
 # Class: is a blueprint that is used to create an object
 # Object: is the code that is created based on the blueprint which is the class
@@ -499,9 +499,9 @@ car = carBlueprint() # creating an object
 class Car:
     print("Hello")
 
-vehcile_1 = Car() # creating the object
+vehicle_1 = Car() # creating the object
 
-# if we wish to leave the class or function empty temporarly
+# if we wish to leave the class or function empty temporarily
 class Car:
     pass # we use this keyword
 
@@ -510,19 +510,19 @@ user_1.username = "Hello" # .username is the attribute name and "Hello" is the v
 
 # Constructor
 class Car:
-    def __init__(self): # __init__ is used to create a Constructor and self is used to represent the object assosicated with the class
+    def __init__(self): # __init__ is used to create a Constructor and self is used to represent the object associated with the class
         print("Hello")
 
 # To set the attribute in the Constructor
 class Car:
     def __init__(self, seat): # seat is a parameter we created
-        self.seat = seat # self.seat is the attribute of the Constructor and seat is the vlaue being passed
+        self.seat = seat # self.seat is the attribute of the Constructor and seat is the value being passed
         self.following = 0 # default attribute, an attribute that is displayed when used
 user_1 = Car(5) # we must pass an argument if our Constructor has a parameter, 5 is the argument being passed
 
 # Adding methods to class
 class Car:
     def my_function(self): # adding a method is the same as creating a function but we need to have the self in our parameter
-        hello.username = "Heyo"
+        hello.username = "Hey"
 
 user_1.my_function() # calling a function from class car 
