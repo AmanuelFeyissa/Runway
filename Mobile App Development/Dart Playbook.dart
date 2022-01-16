@@ -5,3 +5,5 @@
 // Comments
 // Single line comments
 /* Multiple line comments */
+
+// Start when ready
