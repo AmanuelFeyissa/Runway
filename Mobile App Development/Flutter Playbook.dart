@@ -13,3 +13,8 @@
 /* 1st go to view then click on command palette
    2nd type 'Flutter: New Project' then add the name of your project
        use underscores for replacements of spaces */
+
+// Running flutter projects
+/* USING TERMINAL we type flutter run being inside the path of the project
+   USING VS Code we use the command palette and type Flutter: Run
+   or go to run and debug section or F5 */
