@@ -18,4 +18,10 @@ $num = 123; // Integer
 $flo = 34.54; // Float 
 $bool = true; // boolean
 
+// Datatypes and identifiers 
+// Datatypes: when we want to create any variable we don't need to specify their datatypes
+// Identifiers: when we create a variable, it must not start with a number or containa a special 
+//              character, can contain underscore _ letters and numbers
+// Variables are case sensetive
+
 ?>
