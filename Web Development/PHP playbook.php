@@ -24,4 +24,32 @@ $bool = true; // boolean
 //              character, can contain underscore _ letters and numbers
 // Variables are case sensetive
 
+// conditional statments
+// if statments
+if (/*condition*/) {
+    //code goes here
+}
+// Nested if: is an if statment inside another if statment
+// if else statments 
+if (/*condition*/){
+
+    //code goes here
+
+} else{
+    // code goes here
+}
+
+// if elseif statments
+if(/*condition*/) {
+    // code goes here
+}elseif(/*condition*/) {
+    // code goes here
+}elseif(/*condition*/) {
+    // code goes here
+}else {
+    //code goes here
+}
+
+
+
 ?>
