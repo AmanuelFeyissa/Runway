@@ -14,7 +14,7 @@
 // $nameOfVariable
 
 $hello = "hi"; // String
-$num = 123; // Integer
+$n = 123; // Integer
 $flo = 34.54; // Float 
 $bool = true; // boolean
 
@@ -26,12 +26,12 @@ $bool = true; // boolean
 
 // conditional statments
 // if statments
-if (/*condition*/) {
+if ($n/*condition*/) {
     //code goes here
 }
 // Nested if: is an if statment inside another if statment
 // if else statments 
-if (/*condition*/){
+if ($n/* or condition*/){
 
     //code goes here
 
@@ -40,16 +40,29 @@ if (/*condition*/){
 }
 
 // if elseif statments
-if(/*condition*/) {
+if($n/* or condition*/) {
     // code goes here
-}elseif(/*condition*/) {
+}elseif($n/* or condition*/) {
     // code goes here
-}elseif(/*condition*/) {
+}elseif($n/* or condition*/) {
     // code goes here
 }else {
     //code goes here
 }
 
-
+switch ($n /* or condition*/) {
+    case label1:
+      //code to be executed if n=label1;
+      break;
+    case label2:
+      //code to be executed if n=label2;
+      break;
+    case label3:
+      //code to be executed if n=label3;
+      break;
+    
+    default:
+      //code to be executed if n is different from all labels;
+  }
 
 ?>
