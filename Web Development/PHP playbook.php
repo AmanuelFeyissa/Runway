@@ -65,4 +65,8 @@ switch ($n /* or condition*/) {
       //code to be executed if n is different from all labels;
   }
 
+// Printing Function
+// echo()
+  echo("Hello World"); // prints Hello World
+
 ?>
