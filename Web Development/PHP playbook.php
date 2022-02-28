@@ -69,4 +69,10 @@ switch ($n /* or condition*/) {
 // echo()
   echo("Hello World"); // prints Hello World
 
+// Loops
+// While Loop
+while ($n/*or condition is true*/){
+    //run the code inside the curly braces
+}
+
 ?>
