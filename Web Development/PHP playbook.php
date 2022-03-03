@@ -75,4 +75,17 @@ while ($n/*or condition is true*/){
     //run the code inside the curly braces
 }
 
+//For Loop
+for($i; $i >= 0; $i++){
+  //Iterates the code inside this block
+}
+
+//For each loop
+// used to go through arrays and lists
+foreach ($lists as $list){
+  // Code goes here
+}
+//assuming lists is an array
+
+
 ?>
