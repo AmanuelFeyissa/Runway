@@ -87,5 +87,10 @@ foreach ($lists as $list){
 }
 //assuming lists is an array
 
+// Do While Loop
+do{
+  // Code does here
+}while($n/*condition*/);
+
 
 ?>
