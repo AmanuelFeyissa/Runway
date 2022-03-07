@@ -92,5 +92,9 @@ do{
   // Code does here
 }while($n/*condition*/);
 
+// Arrays
+// Used as a special variables used to store multiple multiple values in one variable
+$arrNum = [1, 3, 5, 6, 8];
+
 
 ?>
