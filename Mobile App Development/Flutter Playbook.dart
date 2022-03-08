@@ -22,9 +22,8 @@
 // We need to import the material.dart if we want to use everything that it holds
 import 'package:flutter/material.dart';
 
-
-// // it starts with a main function
-// void main() {
-  
-// }
-
+// it starts with a main function
+void main() {
+  // every wiget function we run is inside this runApp function
+  runApp();
+}
