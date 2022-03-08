@@ -42,6 +42,8 @@ void main() {
             // Colors.  is a class that displays variety of colors 
             backgroundColor: Colors.amber,   
         ),
+        // body: is an attribute that is used to manibulate the main part of the Scaffold
+        body: 
       ),
     ),
   );
