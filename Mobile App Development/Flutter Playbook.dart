@@ -34,7 +34,10 @@ void main() {
         // appBar: is the property of a scaffold for usage of app Bar
         // AppBar() is a wiget function that is used to create and manipulate
         // the top side of our app
-        appBar: AppBar(),
+        appBar: AppBar(
+            // title attribute is how we give a title in our app
+            // Text is wiget function that is used to display text
+            title: Text('Hello World')),
       ),
     ),
   );
