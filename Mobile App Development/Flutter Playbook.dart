@@ -56,6 +56,14 @@ void main() {
                inside our local machine 
                - the path is always inside single quotes
             */
+
+            /* Inorder to include an external file from our local machine like images 
+               we enable assets from the pubsec.yaml file
+               - pubsec.yaml are very sensetive, we use two spaces to separate
+                 parent from child
+                assets: 
+                   - images/path of file
+            */
             image: AssetImage(/* path of file in our local machine*/) 
           ),
         ),
