@@ -25,5 +25,8 @@ import 'package:flutter/material.dart';
 // it starts with a main function
 void main() {
   // every wiget function we run is inside this runApp function
-  runApp();
+  runApp(
+    // Material app is a function that hold alot more wiget to work with
+    MaterialApp(),
+  );
 }
