@@ -30,7 +30,12 @@ void main() {
     MaterialApp(
       // home: is where our app start
       // Scaffold is a widget that gives us a blank white screen to work with
-      home: Scaffold(),
+      home: Scaffold(
+        // appBar: is the property of a scaffold for usage of app Bar
+        // AppBar() is a wiget function that is used to create and manipulate
+        // the top side of our app
+        appBar: AppBar(),
+      ),
     ),
   );
 }
