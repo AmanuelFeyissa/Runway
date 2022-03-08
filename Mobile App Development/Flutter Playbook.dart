@@ -46,7 +46,11 @@ void main() {
         // Center is widget function that is used to center what is inside it or its child
         // child: means the subset of class/function above it
         body: Center(
-          child: 
+          // Image() is wiget function to manipilate images
+          // image: is the attribute to handle image manipulation
+          child: Image(
+            image: 
+          ),
         ),
       ),
     ),
