@@ -49,7 +49,10 @@ void main() {
           // Image() is wiget function to manipilate images
           // image: is the attribute to handle image manipulation
           child: Image(
-            image: 
+            /* NetworkImage() takes an argument of the url that holds the 
+            / image of the source from the internet */
+            image: NetworkImage(/*url*/)
+             
           ),
         ),
       ),
