@@ -27,6 +27,10 @@ void main() {
   // every wiget function we run is inside this runApp function
   runApp(
     // Material app is a function that hold alot more wiget to work with
-    MaterialApp(),
+    MaterialApp(
+      // home: is where our app start
+      // Scaffold is a widget that gives us a blank white screen to work with
+      home: Scaffold(),
+    ),
   );
 }
