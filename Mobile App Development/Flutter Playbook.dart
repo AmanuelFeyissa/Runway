@@ -24,12 +24,12 @@ import 'package:flutter/material.dart';
 
 // it starts with a main function
 void main() {
-  // every wiget function we run is inside this runApp function
+  // every wiget class we run is inside this runApp function
   runApp(
     // Material app is a function that hold alot more wiget to work with
     MaterialApp(
       // home: is where our app start
-      // Scaffold is a widget that gives us a blank white screen to work with
+      // Scaffold is a widget function that gives us a blank white screen to work with
       home: Scaffold(
         // appBar: is the property of a scaffold for usage of app Bar
         // AppBar() is a wiget function that is used to create and manipulate
@@ -37,7 +37,11 @@ void main() {
         appBar: AppBar(
             // title attribute is how we give a title in our app
             // Text is wiget function that is used to display text
-            title: Text('Hello World')),
+            title: Text('Hello World')
+            // backgroundColor: to change the background Color of an appBar or other entities 
+            // Colors.  is a class that displays variety of colors 
+            backgroundColor: Colors.amber,   
+        ),
       ),
     ),
   );
