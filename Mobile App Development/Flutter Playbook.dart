@@ -18,3 +18,13 @@
 /* USING TERMINAL we type flutter run being inside the path of the project
    USING VS Code we use the command palette and type Flutter: Run
    or go to run and debug section or F5 */
+
+// We need to import the material.dart if we want to use everything that it holds
+import 'package:flutter/material.dart';
+
+
+// // it starts with a main function
+// void main() {
+  
+// }
+
