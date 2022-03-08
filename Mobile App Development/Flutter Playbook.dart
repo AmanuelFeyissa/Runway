@@ -42,8 +42,12 @@ void main() {
             // Colors.  is a class that displays variety of colors 
             backgroundColor: Colors.amber,   
         ),
-        // body: is an attribute that is used to manibulate the main part of the Scaffold
-        body: 
+        // body: is an attribute that is used to manipulate the main part of the Scaffold
+        // Center is widget function that is used to center what is inside it or its child
+        // child: means the subset of class/function above it
+        body: Center(
+          child: 
+        ),
       ),
     ),
   );
