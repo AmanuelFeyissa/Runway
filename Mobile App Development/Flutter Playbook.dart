@@ -52,7 +52,11 @@ void main() {
             /* NetworkImage() takes an argument of the url that holds the 
             / image of the source from the internet */
             image: NetworkImage(/*url*/)
-             
+            /* AssetImage(path of file) is used when we want to work with image file located
+               inside our local machine 
+               - the path is always inside single quotes
+            */
+            image: AssetImage(/* path of file in our local machine*/) 
           ),
         ),
       ),
