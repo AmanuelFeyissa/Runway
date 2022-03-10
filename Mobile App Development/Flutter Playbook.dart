@@ -99,7 +99,30 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: Container(),
+        // SafeArea is used when we want to exclude the container from the edges
+        // of our phone like places besides the camera and the like
+        // quick trick make container to child to SafeArea is clicking the 
+        // bulb and choosing warp with widget
+        body: SafeArea(
+          // Container is used as a div in mobile app
+          child: Container(
+            // Properties of container
+            height: 100.0,
+            width: 100.0,
+            // EdgeInserts hold different functionalities for making spacing in 
+            // our margin or padding
+            // .all() is used for all sides at once
+            // .fromLTRB() is used for specific left top right bottom
+            // .only() is used for specifing only one or two for sides
+            // .summetric() is used for horizontal and vertical spacing symetrically
+            //outside of the widget
+            margin: EdgeInsets.fromLTRB(30.0, 20.0, 40.0, 40.0),
+            // inside of the widget
+            padding: EdgeInsets.all(20.0),
+            color: Colors.white,
+            child: Text('Hello'),
+          ),
+        ),
       ),
     );
   }
