@@ -71,3 +71,36 @@ void main() {
     ),
   );
 }
+
+// Inorder to run hot reload and hot restart
+// We first need to create a class that extends Statless or statefull widget
+// the shortest way to create a statelesswidget is using stless command and hit
+// enter
+// Main difference between hot reload and hot restart is
+// Hot reload changes/updates what widget,color or other things have changed and
+// updates when we hit save
+// Hot restart is used when we want to restart some functionality that are 
+// already in process like a counter for example
+
+void main(){
+  // MyApp is the name of the class that extends the statless widget
+  runApp(MyApp());
+}
+
+// the shortcut to create this is stless
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  // checks any changes and updaes when saved or when hot reload button clicked
+  @override
+  Widget build(BuildContext context) {
+    // returns everything that we have been working on from MaterialApp to the
+    // last line of code ;
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.white,
+        body: Container(),
+      ),
+    );
+  }
+}
