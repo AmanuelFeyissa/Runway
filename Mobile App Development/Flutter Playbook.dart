@@ -180,3 +180,57 @@ body: SafeArea(
               )
             ],
           ),
+
+
+body: SafeArea(
+            // Row is used as a layout tool for horizontal use
+          child: Row(
+            /* ONE PROPERTY CAN AND WILL AFFECT THE OTHER */
+            // to change the Verical direction of a widget
+            // .up is for from bottom to top -- red, blue, white 
+            // .down is for from top to bottom -- white, blue, red
+            // REFER for properties in the flutter docs ????
+            verticalDirection: VerticalDirection.up,
+            // aligning across the axis in this case vertical since it is row
+            // spacing between child in this case container
+            // REFER for properties in the flutter docs
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            // aligning on the main axis in this case horizontal since it is row
+            // REFER for properties in the flutter docs
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // manipulates the axis size of the row
+            // changes the eow axis size to min or max
+            mainAxisSize: MainAxisSize.min,
+            // children: [] is a property for row that can hold as many child
+            // widgets as we want example container
+            children: [
+              Container(
+                height: 100.0,
+                width: 100.0,
+                color: Colors.white,
+                child: const Text('Container 1'),
+              ),
+              // SizedBox is used to give a space beteen the row children
+              // width is used because it is row/horizontal
+              SizedBox(
+                width: 20.0,
+              ),
+              Container(
+                height: 100.0,
+                width: 100.0,
+                color: Colors.blue,
+                child: Text('Container 2'),
+              ),
+              Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.red,
+                child: Text('Container 2'),
+              ),
+              Container(
+                // gives the ability to strech as far as possible
+                // mostly used with multiple containers
+                width: double.infinity,
+              )
+            ],
+          ),
