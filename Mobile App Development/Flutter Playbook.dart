@@ -234,3 +234,15 @@ body: SafeArea(
               )
             ],
           ),
+
+// CircleAvatar() is a class mostly used in a container, row or column as a
+// children, used to display user like circular widget
+// creates a circle that represents a user
+              CircleAvatar(
+                // to determine the radius of our circle
+                radius: 50.0,
+                // backgroundImage is used to display the image that we want
+                // AssetImage is for local image displaying
+                // MAKE SURE you include the image in the pubsec.yaml file
+                backgroundImage: AssetImage('images/aman.jpg'),
+              ),
