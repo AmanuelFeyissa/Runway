@@ -298,3 +298,15 @@ body: SafeArea(
                       Icons.email,
                       color: Colors.teal.shade900,
                     ),
+
+// If we want to have a horizontal line in our code for section separating like 
+// we do in web development with <hr> we use the Divider() class
+              SizedBox(
+                // for setting its height
+                height: 20.0,
+                // for limiting its width than just letting it fill the whole
+                // horizontal line
+                width: 250.0,
+                // used to draw a horizontal line
+                child: Divider(color: Colors.teal.shade100),
+              ),
