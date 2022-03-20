@@ -260,3 +260,31 @@ body: SafeArea(
                   // used to change the text weight to bold, italic etc
                   fontWeight: FontWeight.bold,
                 ),
+
+// In order to include a new font that we have downloaded from other source like
+// fonts.google.com we have to first include it in our pubsec.yaml file
+// we create a folder that holds the file of our fonts
+/* Inorder to include an external file from our local machine like fonts 
+               we enable fonts from the pubsec.yaml file
+               - pubsec.yaml are very sensetive, we use two spaces to separate
+                 parent from child
+                  fonts:
+                     - family: Pacifico
+                       fonts:
+                         - asset: fonts/Pacifico-Regular.ttf
+            */
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                  // the name of the font family must be the same as the one 
+                  // that is in our pubsec.yaml file == family: Pacifico
+                  fontFamily: 'Pacifico',
+                  fontSize: 20.0,
+                  // we can specify the color that we use even further by adding
+                  // .shade100 or .teal[100] in our color properties
+                  color: Colors.teal.shade100,
+                  // letter spacing is used to diffine the space between letters 
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
