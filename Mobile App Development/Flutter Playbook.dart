@@ -235,6 +235,22 @@ body: SafeArea(
             ],
           ),
 
+// To nest a row in a column or vice versa we always use another container inside
+// the parent row or column
+            child: Row(children: [
+              Container(
+                height: 100.0,
+                width: 100.0,
+                color: Colors.blue,
+                // Nesting column and row
+                child: Column(
+                  children: [
+
+                ],),
+              ),
+            ],
+            ),
+
 // CircleAvatar() is a class mostly used in a container, row or column as a
 // children, used to display user like circular widget
 // creates a circle that represents a user
