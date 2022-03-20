@@ -288,3 +288,13 @@ body: SafeArea(
                   fontWeight: FontWeight.bold,
                 ),
               ),
+// To add Icons to our project we use the Icons class that displays from the
+// material design with simple steps
+                child: Row(
+                  children: [
+                    // is the Icon class that must be called first
+                    Icon(
+                      // this displays an icon of an email from the material design package
+                      Icons.email,
+                      color: Colors.teal.shade900,
+                    ),
