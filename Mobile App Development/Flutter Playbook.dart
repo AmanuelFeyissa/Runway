@@ -310,3 +310,25 @@ body: SafeArea(
                 // used to draw a horizontal line
                 child: Divider(color: Colors.teal.shade100),
               ),
+// Card() we use the card class to shape and style our widget and it gives more
+// from Containers, like curving its edges, giving it a shadow looking
+// usually has row and columns as children
+// USED IN PLACE OF CONTAINERS
+// Best use of Card() is ListTile() as its Child
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal.shade900,
+                  ),
+                  title: Text(
+                    '+2519-12-34-56-78',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ), 
