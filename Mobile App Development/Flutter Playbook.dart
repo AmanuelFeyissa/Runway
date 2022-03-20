@@ -246,3 +246,17 @@ body: SafeArea(
                 // MAKE SURE you include the image in the pubsec.yaml file
                 backgroundImage: AssetImage('images/aman.jpg'),
               ),
+// Text() has alot of properies to modify and change a plain text
+// style: TextStyle() style: is a property used to change the style of the text
+// TextStyle() has loads of properties like fontSize: fontWeight: 
+              Text(
+                // Plain Text
+                'Amanuel Feyissa',
+                style: TextStyle(
+                  // used to change the font size
+                  fontSize: 40.0,
+                  // used to change the color
+                  color: Colors.white,
+                  // used to change the text weight to bold, italic etc
+                  fontWeight: FontWeight.bold,
+                ),
