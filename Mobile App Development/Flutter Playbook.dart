@@ -317,11 +317,16 @@ body: SafeArea(
 // Best use of Card() is ListTile() as its Child
               Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+    
+// ListTile is like a row or column usually used when icon and texts are present
+// in a project
                 child: ListTile(
+                  // leading is used for the icon displaying property
                   leading: Icon(
                     Icons.phone,
                     color: Colors.teal.shade900,
                   ),
+                  // title is used for the text displaying property
                   title: Text(
                     '+2519-12-34-56-78',
                     style: TextStyle(
