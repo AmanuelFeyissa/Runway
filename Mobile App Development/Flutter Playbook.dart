@@ -353,3 +353,18 @@ body: SafeArea(
                   ),
                 ),
               ), 
+
+// Expanded class is used inside rows or columns widget as a child
+// it is used for resizing and to make our child fit the screen for example images
+// child: property is used to add more widgets for the expanded class to resize
+// flex: property is used to add a ratio of the size of the expanded file 
+// default flex is flex: 1,
+// Image.asset('path of the image') is the shortest way to work with asset images
+    Row(
+      children: [
+        Expanded(
+          //flex: 2,
+          child: Image.asset('images/dice1.png'),
+        ),
+      ]
+    )
