@@ -9,7 +9,10 @@
 
 // Creating Variables
 // we use the var keyword then name of our variable
-var num;  
+var num = 5;  
+
+// Printing or displaying a Variable we use the print function
+print(num);
 
 // Creating Functions
 // Named Function: is when the function is defined by a name
