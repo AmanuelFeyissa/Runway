@@ -72,6 +72,13 @@ void main() {
   );
 }
 
+// Using Intention Actions: Intention actions are suggestions that make our work
+// easier by writting code automatically
+// To Use Intention Actions we need to click on the widget that we want change
+// then we can go to the outline button and right click or we can click the
+// light bulb that appears then change our widget to whatever we want like
+// wrapping 
+
 // Inorder to run hot reload and hot restart
 // We first need to create a class that extends Statless or statefull widget
 // the shortest way to create a statelesswidget is using stless command and hit
