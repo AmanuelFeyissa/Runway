@@ -7,6 +7,10 @@
 
 // Start when ready today
 
+// Creating Variables
+// we use the var keyword then name of our variable
+var num;  
+
 // Creating Functions
 // Named Function: is when the function is defined by a name
 // Void means it does not return anything
