@@ -375,3 +375,20 @@ body: SafeArea(
         ),
       ]
     )
+
+/* TODO: LEARN about the replacements of FlatButton, RaisedButton and OutlineButton
+*/
+
+// FlatButton is a depricated widget used as butten that responds when clicked
+// ignore: deprecated_member_use
+            child: FlatButton(
+              // OnPressed is a requirement that tells the app what to do when 
+              // flat button gets pressed
+              // OnPressed is a void callback meaning it has no argument being 
+              // passed and no data being given
+              onPressed: () {
+                // a Dart function for printing output when clicked on image
+                print('Left gOT pRESSD');
+              },
+              child: Image.asset('images/dice1.png'),
+            ),
