@@ -5,7 +5,10 @@
 // Single line comments
 /* Multiple line comments */
 
-// Start when ready today
+// All Dart Programs starts with a main
+void main(){
+  var myName = 'Aman';
+}
 
 // Creating Variables
 // we use the var keyword then name of our variable
