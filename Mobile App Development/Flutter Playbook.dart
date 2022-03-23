@@ -392,6 +392,19 @@ body: SafeArea(
               },
               child: Image.asset('images/dice1.png'),
             ),
+  // FlatButton is depricated and has been replaced by TextButton which does
+  // bascically the same thing
+            child: TextButton(
+              // OnPressed is a requirement that tells the app what to do when 
+              // text button gets pressed
+              // OnPressed is a void callback meaning it has no argument being 
+              // passed and no data being given
+              onPressed: () {
+                // a Dart function for printing output when clicked on image
+                print('Left gOT pRESSD');
+              },
+              child: Image.asset('images/dice1.png'),
+            ),
 
 // If we have a widget that changes its state with user interactions then it is
 // best to use a Stateful Widget than Stateless Widget
