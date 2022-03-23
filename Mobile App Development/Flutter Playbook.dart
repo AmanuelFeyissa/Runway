@@ -434,3 +434,18 @@ class _DicePageState extends State<DicePage> {
                 child: Image.asset('images/dice$leftDiceNumber.png'),
               ),
             ),
+
+// To Make Random numbers and to incorperate math in our code we fist need to
+// import math library at the begining of our code
+// CODE GOES AT THE BEGINNING OF OUR CODE FILE
+import 'dart:math';
+// After that to use the random number generator we will use the Random() function
+// and if we are working with an interger only we can further use a function that
+// is inside the random function .nextInt(max), max is not included in randomizing
+// the number which means if .nextInt(6) it will generate random number between
+// 0 - 5 
+                  setState(() {
+                    // max is 6 so it will generate numbers between 0 - 5
+                    // to exclude 0 and include 6 we will just add 1
+                    leftDiceNumber = Random().nextInt(6) + 1;
+                  });
