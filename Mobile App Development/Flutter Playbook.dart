@@ -392,3 +392,45 @@ body: SafeArea(
               },
               child: Image.asset('images/dice1.png'),
             ),
+
+// If we have a widget that changes its state with user interactions then it is
+// best to use a Stateful Widget than Stateless Widget
+// Statful Widget is used when we wish to change the screen or user interface 
+// when a user interacts with it
+// To create a stateful widget we use the shortcut 'stful' keyword and it display 
+// two classes then we will a same name for those classes
+class DicePage extends StatefulWidget {
+  const DicePage({Key? key}) : super(key: key);
+
+  @override
+  State<DicePage> createState() => _DicePageState();
+}
+
+class _DicePageState extends State<DicePage> {
+  // initial variable of leftDiceNumber, outside of the build
+  int leftDiceNumber = 5;
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Row(
+        children: [
+          Expanded(
+            // ignore: deprecated_member_use
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextButton(
+                onPressed: () {
+                  // In Order to update the screen when pressed we don't just 
+                  // assign the variable to new value, that will only update the variable
+                  // we use the setState to change the state of the widget from 
+                  // the old one to new
+                  setState(() {
+                    // leftDiceNumber is assigned to 3 so when building it will
+                    // look for the variable in our code and update it to value 3
+                    leftDiceNumber = 3;
+                  });
+                },
+                // updates the leftDiceNumber from the initial 5 to 3 in the UI
+                child: Image.asset('images/dice$leftDiceNumber.png'),
+              ),
+            ),
