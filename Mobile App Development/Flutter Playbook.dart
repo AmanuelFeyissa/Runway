@@ -479,5 +479,22 @@ dependencies:
   // 
   english_words: ^4.0.0
 // Then save it in order to be downloaded with pub get
-// Final include it in your main.dart file
+// Finally include it in your main.dart file
 import 'package:english_words/english_words.dart';
+
+// If we wish to use any package we should read the documentation
+// For example to play audio sound we find a package like 'audioplayers' and
+// install and import it using the previously discussed steps
+// then By reading the documentation, if we want to play a sound
+            // Made a button in order to make a sound when pressed
+            child: TextButton(
+              onPressed: () {
+                // Then from the documentation we create an object from the AudioCache()
+                // class to play a sound that is inside your assets folder
+                final player = AudioCache();
+                // with that object we link it to a .play and pass the name of the audio
+                // the package already assumes you have it in the assets folder
+                player.play('note1.wav');
+              },
+              child: const Text('Click Me'),
+            ),
