@@ -462,3 +462,22 @@ import 'dart:math';
                     // to exclude 0 and include 6 we will just add 1
                     leftDiceNumber = Random().nextInt(6) + 1;
                   });
+
+// Flutter and Dart Packages
+// Packages are already built functions by other people that we import and use
+// to benefit from other people codes
+// pub.dev is where you search all the packages you want for your project
+// To import a package first we need to search and find a package in pub.dev 
+// Then We need to follow the read me file to include it in our project
+// Usually we will update our pubsec.yaml file under dependencies: to install it
+// for example in our pubsec.yaml file
+dependencies:
+  flutter:
+    sdk: flutter
+  // Is a package that allows us to use IOS icons
+  cupertino_icons: ^1.0.2
+  // 
+  english_words: ^4.0.0
+// Then save it in order to be downloaded with pub get
+// Final include it in your main.dart file
+import 'package:english_words/english_words.dart';
