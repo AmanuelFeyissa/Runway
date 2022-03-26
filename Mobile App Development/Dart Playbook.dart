@@ -81,3 +81,10 @@ int myFunction() {
 myFunction();
 // To hold the result we can create a variable
 double result = myFunction();
+
+// Using both a function with parameter and a return value
+int getMilk (int money) {
+  return money - 2;
+}
+// For the function to work we need to pass an argument
+getMilk(5);
