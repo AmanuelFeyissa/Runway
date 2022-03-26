@@ -71,3 +71,13 @@ void greet({String personToGreet, String greeting}) {
 // Then when we call it
 // We use greet: to use thier name when inputting an argument
 greet(greet: 'How do you do', personToGreet: 'Aman');
+
+// Functions with return values
+int myFunction() {
+  double = pi = 3.1415;
+  return pi * 2;
+}
+// To call the function
+myFunction();
+// To hold the result we can create a variable
+double result = myFunction();
