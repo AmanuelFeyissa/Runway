@@ -498,3 +498,30 @@ import 'package:english_words/english_words.dart';
               },
               child: const Text('Click Me'),
             ),
+
+// If we want to make a widget function with a return type and with naming parameters
+// all we need to do is specify the widet type and function nume with its parameters
+  // Expanded is the widget type, build key is the function name
+  // required is to specify it is necessary
+  // Color is the datatype, color is the variable name
+  // int is the datatype, soundNumber is the variable name
+  // inside the parenthesis we have curly braces because it is a naming parameter
+  Expanded buildKey({required Color color, required int soundNumber}) {
+    return Expanded(
+      child: TextButton(
+        // to style the button and add backgroundColor
+        style: ButtonStyle(
+          // color is what is passed from the argument in this case Colors.red
+          backgroundColor: MaterialStateColor.resolveWith((states) => color),
+        ),
+        onPressed: () {
+          // soundNumber is what is passed from the argument in this case 1
+          playSound(soundNumber);
+        },
+        child: const Text('Click Me'),
+      ),
+    );
+  }
+
+// when using the function we call it like
+buildKey(color: Colors.red, soundNumber: 1),
