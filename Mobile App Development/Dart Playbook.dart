@@ -51,3 +51,23 @@ doSomething();
 () {
   // Code Goes Here
 }
+
+// Functions with parameters
+// soundNumber can be used inside the function to change the functionality
+ void playSound(int soundNumber) {
+    final player = AudioCache();
+    player.play('note$soundNumber.wav');
+  }
+// To call the function
+// it is necessary to pass anargument if we have a parameter 
+playSound(3);
+
+// If We have more than one parameter and if we want to keep track of it
+// th curly brace inside the parantesis helps us to use the name of the parameter
+// when we are calling or passing an argument
+void greet({String personToGreet, String greeting}) {
+  print('$greeting $personToGreet');
+}
+// Then when we call it
+// We use greet: to use thier name when inputting an argument
+greet(greet: 'How do you do', personToGreet: 'Aman');
