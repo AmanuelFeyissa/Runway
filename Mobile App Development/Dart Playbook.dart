@@ -88,3 +88,11 @@ int getMilk (int money) {
 }
 // For the function to work we need to pass an argument
 getMilk(5);
+
+// => arrow function
+// arrow function is used when we have a single line of instruction that is 
+// going to be returned 
+// => this holds {return x;} all in one
+// Example
+int add() => 5 + 2;
+int add(int n1, int n2) => n1 + n2;
