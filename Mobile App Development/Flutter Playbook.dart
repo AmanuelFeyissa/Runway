@@ -536,3 +536,37 @@ import 'package:english_words/english_words.dart';
 
 // when using the function we call it like
 buildKey(color: Colors.red, soundNumber: 1),
+
+// List in Flutter
+// List is used as an array to store multiple of the same kind of datatype values
+// Inorder to declare a list we first write List then list variableName then assign it to
+// a collection of lists inside []
+List scoreKeeper = [
+    Icon(
+      Icons.check,
+      color: Colors.green,
+    ),
+    Icon(
+      Icons.close,
+      color: Colors.red,
+    ),
+  ];
+// To tell that we are using a specific type of datatype of list we include
+// <> after List then write the datatype
+List<Icon> scoreKeeper = [
+    Icon(
+      Icons.check,
+      color: Colors.green,
+    ),
+    Icon(
+      Icons.close,
+      color: Colors.red,
+    ),
+  ];
+// To add onto our existing list from anywhere in our code
+scoreKeeper.add(Icon(
+      Icons.check,
+      color: Colors.green,
+    ),);
+// to print out the list we just need to call the name
+scoreKeeper,
