@@ -121,3 +121,30 @@ myList.add('Hi'); // It is added at the last of your lists
 // If you want to add an item in a specific index
 // we specify the index of where it should be added and value
 myList.insert(2, 'Hell');
+
+// Conditonals
+// if else
+if (/*condition*/) {
+  // if condition is satisfies Exceute the code
+} else {
+  // if condition is does not satisfy Execute the code
+}
+
+// if elseif else
+if (/*condition*/) {
+  // if condition is satisfies Exceute the code
+} else if(/*condition*/) {
+
+} else {
+  // if condition is does not satisfy Execute the code
+}
+// if condition
+if (/*condition*/) {
+
+}
+// Nested if condition
+if(/*condition*/) {
+  if (/*condition*/) {
+
+  }
+}
