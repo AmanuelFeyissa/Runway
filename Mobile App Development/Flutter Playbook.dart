@@ -404,6 +404,17 @@ body: SafeArea(
                 print('Left gOT pRESSD');
               },
               child: Image.asset('images/dice1.png'),
+              // to change the style of a button like color and text color
+              // we call style properties then inside TextButton there is 
+              // a function .styleFrom() that has different properties
+              // primary: is to display the color of the button
+              // to change textcolor we use textStyle Property and call
+              // TextStyle() function then fromthat we can set the color
+              style: TextButton.styleFrom(
+                  primary: Colors.red,
+                  textStyle: TextStyle(
+                    color: Colors.white,
+                  )
             ),
 
 // If we have a widget that changes its state with user interactions then it is
