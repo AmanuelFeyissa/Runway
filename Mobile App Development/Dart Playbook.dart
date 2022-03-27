@@ -111,6 +111,8 @@ List<String> myList = [
 // To Print it 
 // by using numerical location if its index and it starts from 0
 print(myList[2]);
+// .first is used to print the value of the first index
+myList.first;
 //  to find the index:  is by using the indexOf function and specifying the value
 // It is case sensitive
 print(myList.indexOf('Aman')]);
