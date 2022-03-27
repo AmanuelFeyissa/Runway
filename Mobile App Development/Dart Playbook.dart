@@ -148,3 +148,17 @@ if(/*condition*/) {
 
   }
 }
+
+// Operators
+// == Equals
+// != Not Equal to
+// = Assignment
+// > Greater than
+// < Less than
+// >= Greater than and equal to
+// <= Less than and equal to
+
+// Comparision Operators
+// && AND
+// || OR
+// ! NOT
