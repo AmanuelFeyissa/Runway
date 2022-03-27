@@ -96,3 +96,26 @@ getMilk(5);
 // Example
 int add() => 5 + 2;
 int add(int n1, int n2) => n1 + n2;
+
+// Lists
+// List is used as an array to store multiple of the same kind of datatype values
+// Inorder to declare a list we first write List then list variableName then assign it to
+// a collection of lists inside []
+// To tell that we are using a specific type of datatype of list we include
+// <> after List then write the datatype
+List<String> myList = [
+  'Aman',
+  'Jack',
+  'Hello',
+];
+// To Print it 
+// by using numerical location if its index and it starts from 0
+print(myList[2]);
+//  to find the index:  is by using the indexOf function and specifying the value
+// It is case sensitive
+print(myList.indexOf('Aman')]);
+// to add an item
+myList.add('Hi'); // It is added at the last of your lists
+// If you want to add an item in a specific index
+// we specify the index of where it should be added and value
+myList.insert(2, 'Hell');
