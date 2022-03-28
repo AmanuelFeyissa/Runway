@@ -162,3 +162,31 @@ if(/*condition*/) {
 // && AND
 // || OR
 // ! NOT
+
+// Classes and Objects
+// Classes are bluprints that we implement to create an object
+// an object is what is created with the properties of the class
+class Car {
+  // Property or Field is like a variable of a class
+  // late keyword is use if we want to initialize our property later
+  late int number;
+
+  // Construtors are created when the object is created
+  // used as to initialize our object
+  // We use the same name of the class with parenthesis to create our constructor
+  Car() {
+    
+  }
+
+  // Method is like a function of a class
+  void drive() {
+    // Code goes here
+  }
+
+}
+// To Create an Object from the class
+Car myCar = Car();
+// to call the property or method we use dot notation
+myCar.number;
+myCar.drive();
+
