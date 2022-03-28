@@ -196,5 +196,18 @@ myCar.drive();
 // Example we can create a class that can handle the patient part only in a hosipital
 // system.
 
+// Encapsulation OOP
+// is used to protect and limit a class to not interfere, uncless necessary
+// and do their own job only
+// we can devide a clsses encapsulation in public, which every class can access
+// in private, which only members of the class can access
+// to declare a propety to a private we put an underscore infront of it
+int _questionBank; 
+// so in order to get information from the private class we create a method to 
+// get that information
+  String getQuestionText(int questionNumber) {
+    return _questionBank[questionNumber].questionText;
+  }
+
  
 
