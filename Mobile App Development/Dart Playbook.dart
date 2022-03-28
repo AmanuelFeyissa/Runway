@@ -171,12 +171,36 @@ class Car {
   // late keyword is use if we want to initialize our property later
   late int number;
 
+  // Constructors
   // Construtors are created when the object is created
   // used as to initialize our object
   // We use the same name of the class with parenthesis to create our constructor
+  // Default Constructor, Dart creates the default constructor automatically
   Car() {
     
   }
+  // Example of named constructors
+  Car({int num, int anotherNum}) {
+    // Assigning of properties with the parameter
+  }
+  // When Creating an object
+  Car newCar = Car(num: 50, anotherNum: 23);
+  // this. is used when we want to refer to a specific property of that class
+  // NOT the parameter passed
+  class Mobile {
+    late int num;
+    late String name;
+    Car({int num, String name}) {
+      // this.num, this.name refers to the one inside Mobile class, 
+      // num and name is a parameter of the constructor 
+      this.num = num;
+      this.name = name;
+    }
+  }
+  // To Simplify the above constructor with multiple parameter
+  // the Above Constructor is equivalent to
+  // RECOMMENDED to use a named variable to not get confused when creating an object
+  Car({this.num, this.name}); // Shortens the above Constructor
 
   // Method is like a function of a class
   void drive() {
