@@ -190,3 +190,11 @@ Car myCar = Car();
 myCar.number;
 myCar.drive();
 
+// Abstraction OOP
+// is used to modularize and to make the complexity of our project be easier to
+// understand and work with
+// Example we can create a class that can handle the patient part only in a hosipital
+// system.
+
+ 
+
