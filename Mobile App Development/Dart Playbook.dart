@@ -231,5 +231,31 @@ class ElectricCar extends Car {
   }
 }
 
+// Polymorphism
+// To cange the shape or update it from the previous structure  
+// even if we inherit properties and methods from out parent class and if we want
+// to change those properties and methods from the parent class to our own liking
+// we use @override keyword to update it to our child class characterstics
+// Example
+class LevitatingCar extends Car{
+
+  @override 
+  void drive() {
+    print('Levetate');
+  }
+}
+// If we want keep the property or method of our parent class but also add to it
+// we use
+class CoolCar extends Car{
+
+  @override 
+  void drive() {
+    // to call the parent class we use super. to refere to parent class
+    super.drive();
+    // then add our own new functionalities
+    print('Vroom');
+  }
+} 
+
  
 
