@@ -209,5 +209,27 @@ int _questionBank;
     return _questionBank[questionNumber].questionText;
   }
 
+// Inheritance
+// it is used for reducing code repeation by inheriting from the parent class
+// we use extends keyword to inherit from the parent class
+// the child class inherits all the property and method from the parent class
+// also can add new property and method of its own
+// Example
+class Car{
+  int numberOfSeat = 5;
+
+  void drive() {
+    print('wheels turn');
+  }
+}
+
+// child class that inherits from the parent class Car
+class ElectricCar extends Car {
+  int batterlevel = 100;
+  void recharge() {
+    batterlevel = 100;
+  }
+}
+
  
 
