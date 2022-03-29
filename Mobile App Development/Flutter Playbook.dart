@@ -570,3 +570,23 @@ scoreKeeper.add(Icon(
     ),);
 // to print out the list we just need to call the name
 scoreKeeper,
+
+// Decoration and constraints are used in a container as a property
+// TODO: read more about it
+      Container(
+        // Used to modify the containers layout as seen as box
+        // BoxDecoration is used to modify the container as a whole like adding
+        // an image
+        decoration: BoxDecoration(
+          // DecorationImage class is called to add an image in BoxDecoration
+          image: DecorationImage(
+            image: AssetImage('images/background.png'),
+            // fit is used as a property for something like BoxFit
+            // BoxFit is used to determine the size of the image or properties
+            // area of covarage, .fill is used to fill the whole canvas 
+            fit: BoxFit.fill,
+          ),
+        ),
+        padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
+        constraints: BoxConstraints.expand(),
+      ),
