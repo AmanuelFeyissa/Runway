@@ -590,3 +590,15 @@ scoreKeeper,
         padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
         constraints: BoxConstraints.expand(),
       ),
+
+// TODO: Read more on visibility
+// Visibility is a widget that allows us to make what button, text or anything that
+// is wrapped under it to make it invisible or visible
+                Visibility(
+                  // visible takes a boolean if true it will make it visible 
+                  // if false it will make it invisible
+                  // RECOMMENDED should be used with a function that returns a
+                  // boolean if some conditions are met or a function with IF/ELSE
+                  // inside it
+                  visible: true,
+                  visible: false,
