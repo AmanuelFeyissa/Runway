@@ -602,3 +602,52 @@ scoreKeeper,
                   // inside it
                   visible: true,
                   visible: false,
+
+// Flutter Themes
+// Used for a custom styling of our App
+// TODO: Use the Flutter Docs, the cookbook section
+// When we customize with theme in our material app, it will apply throught any
+// page that is child to it
+    return MaterialApp(
+      // theme is the property that we call to manipulate and style our App
+      // ThemeData Class has a lot of functionalities for styling our custom App
+      // ThemeData.dark() gives a dark theme mode for the whole app including 
+      // multiple pages
+      theme: ThemeData.dark(),
+        // primarColor is used to change the background color of major parts of
+        // the app like tab bar and tool bar, etc
+        // If we want to give a specific color we use the Color() class which
+        // takes the ARGB (alpha red green blue), moset of the time our alpha
+        // is going to be 0xFF making it opaque, the other six digits will hold the RGB
+        primaryColor: Color(0xFF0A0E21), 
+        // depricated, used for changing the color of widgets like FloatingActionButton
+        accentColor: Colors.red,
+        // The background color for a typical material app or a page within the app.
+        scaffoldBackgroundColor: Color(0xFF0A0E21),
+        // In order ot change the text color of the body text we use the textTheme
+        // Property, TextTheme() holds different properties to identify which section
+        // you are tring to change then we can change it with TextStyle()
+        textTheme: TextTheme(
+          bodyText1: TextStyle(color: Colors.white),
+        ),
+        // ThemeData.dark().copyWith(), copyWith() function is used to keep the default
+        // of ThemeData.dark() then add our own customization
+        MaterialApp(
+          theme: ThemeData.dark().copyWith(
+            scaffoldBackgroundColor: Color(0xFF0A0E21),
+            primaryColor: Color(0xFF0A0E21),
+            accentColor: Colors.red,
+            textTheme: TextTheme(
+            bodyText1: TextStyle(color: Colors.white),
+        ),
+        ),
+// If we want to change a specfic widget theme we only need to wrap it inside
+// the Theme() class
+// it requires data: and child: property, data holds all the theme modification 
+// properties and child holds the actual widget
+      floatingActionButton: Theme(
+        data: ThemeData.light(),
+        child: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.add),
+        ),
