@@ -279,7 +279,31 @@ class CoolCar extends Car{
     // then add our own new functionalities
     print('Vroom');
   }
-} 
+}
+
+// final and const
+// Both final and const are used make a variable or widgets to make them fixed or,
+// unchangeable or immutable
+// final == setting once and it will not change
+// const == is a fixed value[compile time constant] that will not change throughout the code
+const int myNum = 2;
+final int newNum =5;
+
+myNum = 4; // Error constant variables can not be assigned a value
+newNum = 6; // Error a final variable can only be set once
+// Difference
+// final can get the value in any point in time meaning if we want a value of a variable
+// when the app is running it is possible, but const is a compile time constant meaning
+// we can only get when compiled or when we run it. we can not get any value or modify it 
+// when the app is running
+// Example
+// this will not give us the exact value because time of now is always changing and
+// const can not retrive data after it is run
+const myNum = DateTime.now(); 
+// this will give us the exact value because final can retrive the data after runtime
+const newNum = DateTime.now();
+
+
 
  
 
