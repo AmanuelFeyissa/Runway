@@ -660,7 +660,9 @@ scoreKeeper,
 class ReusableCard extends StatelessWidget {
   // if we want change the color of the container widget when we create it
   // first we define color property with Color widget datatype
-  late Color color;
+  final Color color;
+  // ? is used to initiallize a null datatype variable
+  final Widget? cardChild;
 
   // then create a constructor that requires a color property value whenever
   // the widget class object[ReusableCard] is created
@@ -672,6 +674,8 @@ class ReusableCard extends StatelessWidget {
   Widget build(BuildContext context) {
     // Container with multiple repeation
     return Container(
+      // we will include the cardChild widget property as a child
+      child: cardChild,
       margin: const EdgeInsets.all(15.0),
       // Decoration is used when we want to style our container
       // BoxDecoration is used to set the Border radius and color to what we want 
@@ -683,3 +687,21 @@ class ReusableCard extends StatelessWidget {
     );
   }
 }
+// When we use it in our main page it will look like
+        Row(
+            children: [
+              Expanded(
+                // ReusableCard is the class widget that we created
+                child: ReusableCard(
+                  // color is the ReusableCard property that we created
+                  // activeCardcolor is a const variable set to a color
+                  color: activeCardColor,
+                  // we use cardChild in our own made widget
+                  // IconContent is another class we created that has iconSymbol,
+                  // gender property
+                  cardChild: IconContent(
+                    // Takes an icon from frontAwesomeFlutter package
+                    iconSymbol: FontAwesomeIcons.mars,
+                    // Takes a string
+                    gender: 'MALE',
+            ),
