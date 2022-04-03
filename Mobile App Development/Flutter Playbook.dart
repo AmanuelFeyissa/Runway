@@ -651,3 +651,35 @@ scoreKeeper,
           onPressed: () {},
           child: Icon(Icons.add),
         ),
+
+// In Order for us to refactor and make our widgets have less repeation we have
+// to create a widget class of the widgets that are repeating
+// to do that we click on the widget that has repeation and click on the light bulb
+// or go to flutter outline, then right click. from the options click on extract Widget
+// this will promt as for a new widget name and create the widget class below  
+class ReusableCard extends StatelessWidget {
+  // if we want change the color of the container widget when we create it
+  // first we define color property with Color widget datatype
+  late Color color;
+
+  // then create a constructor that requires a color property value whenever
+  // the widget class object[ReusableCard] is created
+  // required is used when we initialize a property in a named parameter, just to
+  // tell us it is required when object is created
+  ReusableCard({required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    // Container with multiple repeation
+    return Container(
+      margin: const EdgeInsets.all(15.0),
+      // Decoration is used when we want to style our container
+      // BoxDecoration is used to set the Border radius and color to what we want 
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10.0),
+        // color: takes the property of color from our class
+        color: color,
+      ),
+    );
+  }
+}
