@@ -303,7 +303,26 @@ const myNum = DateTime.now();
 // this will give us the exact value because final can retrive the data after runtime
 const newNum = DateTime.now();
 
-
+// Enums
+// are a way to establish some kind of actions that is usally not numerical to
+// a more senesable words for good code reading use
+// Needs to be created outside of any class
+enum CarType {
+  hatchback,
+  SUV,
+  convertible,
+}
+// To create a property from the enum datatype
+class Car {
+  // creating a Car property from the enum CarType datatype
+  CarType carStyle;
+  // Creating a constructor
+  Car({this.carStyle});
+}
+// Calling it in our main
+void main() {
+  Car myCar = Car(carStyle: CarType.SUV);
+}
 
  
 
