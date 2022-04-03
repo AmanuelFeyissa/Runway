@@ -324,5 +324,23 @@ void main() {
   Car myCar = Car(carStyle: CarType.SUV);
 }
 
+// Ternary Operator
+// is a shortend syntax of if else statement
+// Example IF/ELSE
+bool amanIsWeird = false;
+if (amanIsWeird == true) {
+  print('Are You Sure');
+} else {
+  print('I TOLD YOU SO');
+}
+// Converting it to TERNARY OPERATOR
+bool amanIsWeird = false;
+// amanIsWeird == true represents the if condition inside the bracket
+// ? is used to separate the block of code and condition
+// : is used to separate else part of the block of code
+// print('Are You Sure') is a block of code that is in an IF statment
+// print('I TOLD YOU SO') is a block of code that is in an ELSE statment 
+amanIsWeird == true ? print('Are You Sure') : print('I TOLD YOU SO');
+
  
 
