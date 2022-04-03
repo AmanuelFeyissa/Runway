@@ -705,3 +705,24 @@ class ReusableCard extends StatelessWidget {
                     // Takes a string
                     gender: 'MALE',
             ),
+
+// Gesture Detector
+// is how it sounds like it detects any kind of gesture like tap double tap and
+// many more properties
+                child: GestureDetector(
+                  // on Tap detects when we tap the screen of our device
+                  // then we can use anonymous function to change its state and
+                  // add functionalities 
+                  onTap: () {
+                    setState(() {
+                      // a function made by us that is used for determining the color
+                      // if it is clicked or not
+                      updateColor(1);
+                    });
+                  },
+                  child: ReusableCard(
+                    color: maleCardColor,
+                    cardChild: IconContent(
+                      iconSymbol: FontAwesomeIcons.mars,
+                      gender: 'MALE',
+                    ),
