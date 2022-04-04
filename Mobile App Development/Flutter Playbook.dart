@@ -857,3 +857,52 @@ class RoundIconButton extends StatelessWidget {
             // calling our own property icon
             icon: FontAwesomeIcons.minus,
           ),
+
+// Routes and Navigation
+// Route is synonymous with page or screen, getting to a page
+// Naviagation is like our map or what tells are where to go
+// Our screens are designed on top of each other
+// Example
+// Assume there is a button with onPressed function property
+// If we want to route 1 to 2 screens we use
+onPressed: () {
+  // Navigator.push is used to add a new screen or page on top of our current screen
+  // context is to refer to our current route with the build reference context
+  Navigator.push(context,
+                // MaterialPageRoute takes a builder input which is context
+                // then returns the new page which is in this case NewPage()
+                // NewPage() needs to be imported inorder to work  
+                MaterialPageRoute(builder: (context) => NewPage(),),),);
+}
+// To go back to a screen (previous screen) we use the Navigator.pop 
+// Assume this is a button on the newPage and we want to go back to the previous page
+onPressed: () {
+  // .pop destroys the current newPage sesstion for us to go back to the previous page
+  Navigator.pop(context);
+}
+// If we have multiple screens [Named Routes]
+// we use named Routes, is a way to define our pages at once and call it when we want to
+// It is created inside our MatrialApp usually in the main file
+// all pages needs to be imported inorder to work 
+// Assume this is main.dart in MaterialApp
+return MaterialApp(
+  
+  //home: homePage(),
+  // initialRoute: does the same thing as the home: it defines the beginning of the project page
+  // initialRoute: takes a string, usually the key of our map
+  // NOTE: we can not use home: and initialRoute: together. ONLY just one
+  initialRoute: '/',
+  // routes: is used to define the routes that we are going to find in our project
+  // we use maps to define routes in flutter
+  // maps are what we call Dictonary in python, that comes with key: value pair
+  // maps are difined in {key: value}
+  routes: {
+    '/': (context) => homePage();
+    '/first': (context) => NewScreen();
+  },
+);
+// To use our Named Route
+onPressed: () {
+  // we use the .pushNamed to specify the key of our map
+  Navigator.pushNamed(context, '/first');
+},
