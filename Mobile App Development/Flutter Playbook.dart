@@ -806,3 +806,54 @@ class ReusableCard extends StatelessWidget {
                       ),
                     ],
                   ),
+
+// Creating our own widget
+// If we wish to create a new widget withour own design, we first need to base of 
+// from a widget that already exists in the flutter framework
+// then add our own property to make it a new widget
+// creating a stateless widget called RoundIconButton
+class RoundIconButton extends StatelessWidget {
+  // Constructor for our widget
+  RoundIconButton({@required this.icon, @required this.onPressed});
+
+  // property of our widget, Icon property and Function Property
+  final IconData? icon;
+  final Function()? onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    // RawMaterialButton is our base widget, also used to make the floattingActionButton
+    // we modifiy it to our own liking
+    return RawMaterialButton(
+      // assigning the our onPressed function property to onPressed property 
+      onPressed: onPressed,
+      // assigning our own icon inside the Icon class to the child property 
+      child: Icon(icon),
+      // elevation is used for shadowing
+      elevation: 0.0,
+      // From the documentation of flutter
+      // to make the box constraints just like floatingActionButtoon
+      constraints: BoxConstraints.tightFor(
+        width: 56.0,
+        height: 56.0,
+      ),
+      // To provide the shape for our widget
+      shape: CircleBorder(),
+      // tp provide the color for our widget
+      fillColor: Color(0xFF4C4F5E),
+    );
+  }
+}
+// Using it in our project
+            int age = 18;
+            RoundIconButton(
+            //calling our own propery onPressed
+            onPressed: () {
+              // setting it to change state when pressed
+              setState(() {
+                age--;
+              });
+            },
+            // calling our own property icon
+            icon: FontAwesomeIcons.minus,
+          ),
