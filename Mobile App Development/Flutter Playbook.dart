@@ -752,6 +752,34 @@ class ReusableCard extends StatelessWidget {
                     // max: is used to display the maximum value of the slider
                     max: 220.0,
                   ) 
+// To Customize any Widget, Specifically Slider Widget
+// Most Widgets have there own themes for customization
+                  SliderTheme(
+                    // data: property is required used to fetch a theme class of
+                    // a specific widget in this case SliderThem or SliderData
+                    // TODOread more: .of(context) means it sould run with the build widget
+                    //.copyWith is used to change specific part of the widget and keep the
+                    // default
+                    data: SliderTheme.of(context).copyWith(
+                      // used to change the color of the circular part
+                      thumbColor: Color(0xFFEB1555),
+                      // used to change active,the line color if the slider
+                      activeTrackColor: Colors.white,
+                      // used to change inactive,the line color if the slider
+                      inactiveTrackColor: Color(0xFF8D8E98),
+                      // used to change the overlay or color that circulates the
+                      // the thumb
+                      overlayColor: Color(0x29EB1555),
+                      // used to change the thumb shape
+                      thumbShape:
+                          // a function to change round slider thumb shape
+                          RoundSliderThumbShape(enabledThumbRadius: 15.0),
+                      // used to change the overlay shape
+                      overlayShape:
+                          // a function to change round slider overlay shape
+                          RoundSliderOverlayShape(overlayRadius: 30.0),
+                    ),
+                  )
 
 // About textBaseline
                   Row(
