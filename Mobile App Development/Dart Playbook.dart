@@ -342,5 +342,44 @@ bool amanIsWeird = false;
 // print('I TOLD YOU SO') is a block of code that is in an ELSE statment 
 amanIsWeird == true ? print('Are You Sure') : print('I TOLD YOU SO');
 
- 
+// Function as First Order Object
+// Functions can be degined as a primitive datatype like int, using the keyword
+// Function
+// Example using a function as an input
+void main() {
+  // called calculator function and gave an argument of 2 numbers and a function
+  int result = calculator(5, 8, add);
+  print (result);
+}
+// created a function that takes another function as an input
+int calculator(int n1, int n2, Function calculation){
+  return calculation(n1, n2);
+}
+int add(int n1, int n2) {
+  return n1 + n2;
+}
+// Creating a function with the keyword
+// used anonymous function
+Function calculator = (int n1, int n2, Function calculation){
+  return calculation(n1, n2);
+};
+// Function in class
+// main function
+void main() {
+  // slowDrive is passed without any parenthesis because we are just saying 
+  // drive: is using slowDrive function
+  Car myCar = Car(drive: slowDrive);
+  // Now i am triggering the function to execute by adding the parenthsis
+  // myCar.drive = slowDrive; can also be used this way for assigning
+  myCar.drive();
+} 
+class Car{
+  Car({this.drive});
+
+  late Function drive;
+}
+// function that prints something
+void slowDrive() {
+  print('Hello Slow');
+}
 
