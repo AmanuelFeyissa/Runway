@@ -386,3 +386,20 @@ void slowDrive() {
 // voidCallback is used to create a void Function()
   final VoidCallback? onPress;
 
+// Maps
+// maps are what we call Dictonary in python, that comes with key: value pair
+// maps are difined in {key: value}
+// maps are unordered
+Map<String, int> phoneBook = {
+  'Amy': 0956334,
+  'Aman': 3563454,
+};
+// Calling it
+main() {
+  print(phoneBook['Aman']);
+// Adding value to the map
+phoneBook['Hello'] = 343545;
+phoneBook['Hello']; // Gives 343545
+phoneBook.length; // Gives how many values there are in number
+phoneBook.keys; // Gives the keys of the phoneBook map
+}
