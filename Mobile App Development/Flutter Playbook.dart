@@ -752,3 +752,29 @@ class ReusableCard extends StatelessWidget {
                     // max: is used to display the maximum value of the slider
                     max: 220.0,
                   ) 
+
+// About textBaseline
+                  Row(
+                    // to set the mainaxis alignment to center
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    // to set the crossaxis alignment to baseline
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    // When we set crossaxis alignment to baseline we get an error
+                    // if it is a Text Widget, saying it needs to have a textBaseline
+                    // to fix it textBaseline: is used to set it to alphabetic
+                    // or other choices
+                    textBaseline: TextBaseline.alphabetic,
+                    children: [
+                      Text(
+                        // used to convert int to string
+                        height.toString(),
+                        // constant variable set from the constants.dart
+                        style: kTextStyleWithWeight,
+                      ),
+                      Text(
+                        'cm',
+                        // constant variable set from the constants.dart
+                        style: kTextStyleLable,
+                      ),
+                    ],
+                  ),
