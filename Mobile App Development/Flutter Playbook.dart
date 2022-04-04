@@ -726,3 +726,29 @@ class ReusableCard extends StatelessWidget {
                       iconSymbol: FontAwesomeIcons.mars,
                       gender: 'MALE',
                     ),
+
+// Slider Widget
+// is a widget that is used to make a slider of a sort // Google Slider for more info
+                  Slider(
+                    int height = 180;
+                    // it requires value and onChange property
+                    // value: is used to set the value to a double
+                    // toDouble() converts the value to double
+                    value: height.toDouble(),
+                    // activeColor: changes the color of where the slider is active
+                    activeColor: Color(0xFFEB1555),
+                    // inactiveColor: changes the color of where the slider is inactive
+                    inactiveColor: Color(0xFF8D8E98),
+                    // onChanged: takes an input of double and sets its state to the
+                    // newValue of the double to our first value[height] 
+                    // when drgged or changed
+                    onChanged: (double newValue) {
+                      setState(() {
+                        height = newValue.round();
+                      });
+                    },
+                    // min: is used to display the minimum value of the slider
+                    min: 120.0,
+                    // max: is used to display the maximum value of the slider
+                    max: 220.0,
+                  ) 
