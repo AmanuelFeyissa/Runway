@@ -377,6 +377,7 @@ body: SafeArea(
     )
 
 /* TODO: LEARN about the replacements of FlatButton, RaisedButton and OutlineButton
+         FlatButton is replaced by TextButton
 */
 
 // FlatButton is a depricated widget used as butten that responds when clicked
