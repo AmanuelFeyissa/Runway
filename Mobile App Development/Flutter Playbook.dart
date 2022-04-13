@@ -907,3 +907,7 @@ onPressed: () {
   // we use the .pushNamed to specify the key of our map
   Navigator.pushNamed(context, '/first');
 },
+
+// Useful functions
+_bmi.toStringAsFixed(1); // to limit the decimal to just 1 digit
+resultText!.toUpperCase() // to change the string to upper case
