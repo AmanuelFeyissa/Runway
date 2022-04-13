@@ -403,3 +403,20 @@ phoneBook['Hello']; // Gives 343545
 phoneBook.length; // Gives how many values there are in number
 phoneBook.keys; // Gives the keys of the phoneBook map
 }
+
+// For Working with A Null property we will use a check target keyword, that is 
+// represented by !
+// TODO Learn more about ! and check target
+// initialized the variable
+  double? _bmi;
+
+  // to work with the null variable we add ! at the end of the null variable
+  String getResult() {
+    if (_bmi! >= 25) {
+      return 'OverWeight';
+    } else if (_bmi! > 18.5) {
+      return 'Normal';
+    } else {
+      return 'Underweight';
+    }
+  }
