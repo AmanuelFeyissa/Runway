@@ -78,3 +78,9 @@ var x = true;
 var fName = prompt("What is ur name?");
 // \n line break or new line used in a string
 var hel = "Hello \n World";
+
+// Comments
+// for a single line
+/* 
+    for multiple line
+*/
