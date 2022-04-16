@@ -132,3 +132,17 @@ if ( a === b ) {
  } else {
     alert("No, they're NOT equal");
  }
+
+ // Switch statment
+ var grade = "Premium";
+
+switch ( grade ) {
+     case "Regular":
+          alert("it is 3.15");
+          break;
+     case "Premium":
+          alert("it is 3.35"); // prints this one
+          break;
+     default:
+          alert("Not a valid grade");
+}
