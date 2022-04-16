@@ -146,3 +146,11 @@ switch ( grade ) {
      default:
           alert("Not a valid grade");
 }
+
+// Functions
+// Syntax
+function myFunction() {
+    // Code goes here
+}
+// Calling
+myFunction();
