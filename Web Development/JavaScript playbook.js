@@ -95,6 +95,7 @@ if (/*condition is true*/ a == 0) {
 }
 // Nested if
 var balance = 5000;
+// if else
 if (balance >= 0) {
     alert("the balance is positive");
     if ( balance > 10000) {
