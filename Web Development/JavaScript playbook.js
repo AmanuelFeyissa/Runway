@@ -53,3 +53,18 @@ var message = "Hello, World";
 var anotherVariable = 'Hello, World';
 // We use the escape operator \ to make what comes next the same as other strings, or to not make it a special key
 var more = "Hello it\'s me";
+
+// Operators
+// = Assignment
+// + - * / arithmetic operators
+// JS has opertator precedence / * first and + - second
+// if we want to make some calculation first we put it inside ()
+var score;
+score = score + 10; 
+score += 10; // Shorter way
+// += -= *= /= can be used
+// Increment and decrement
+a = a + 1;
+a++; // Increment
+a--; // Decrement
+
