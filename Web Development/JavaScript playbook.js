@@ -84,3 +84,12 @@ var hel = "Hello \n World";
 /* 
     for multiple line
 */
+
+// Conditionals
+// If statments
+// == is equal
+// != not equal
+if (/*condition is true*/ a == 0) {
+ // Execute this code if condition is true
+ alert("its true");
+}
