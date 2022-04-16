@@ -5,7 +5,19 @@
 // React native is a platform that uses the JavaScript language to build mobile application
 // Starting code
 
-// Going to use simple JavaScript for portfolio
-<script> // bug to fix
-//Put code here
-</script>
+// in order to run a javascript code we first need to tell our web browser where to find and interprete it
+// to do that we use HTML
+// To run a javascript file we just need to run the HTML web page file that contains the .js script tag on our browser
+<html>
+	<head>
+		<title>Simple Page</title>
+	</head>
+	<body>
+		<p>This is a very simple HTML page</p>
+        {/*Here is where we tell our web page and browser to find the .js file */}
+		<script src="script.js"></script>
+	</body>
+</html>
+
+
+
