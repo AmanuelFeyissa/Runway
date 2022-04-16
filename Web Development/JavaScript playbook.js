@@ -184,3 +184,19 @@ function addTwoNumbers(a, b) {
     y = 500; // Global variable
 	return x;
 }
+
+// To split up the code into different files
+// We just add more script tags
+// Order of the files is important, if the first is dependent on the third called it might not work
+<html>
+	<head>
+		<title>Simple Page</title>
+	</head>
+	<body>
+		<p>This is a very simple HTML page</p>
+        {/*Here is where we tell our web page and browser to find the .js file */}
+		<script src="script.js"></script>
+        <script src="another.js"></script>
+        <script src="Functions/functions.js"></script>
+	</body>
+</html>
