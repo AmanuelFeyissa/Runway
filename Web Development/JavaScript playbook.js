@@ -154,3 +154,22 @@ function myFunction() {
 }
 // Calling
 myFunction();
+
+// Parameters and arguments
+// definig parameters a and b
+function addTwoNumbers(a, b) {
+	var result = a + b;
+	alert(result);
+}
+
+// passing arguments 5 and 10
+addTwoNumbers(5, 10);
+
+// Return
+function addTwoNumbers(a, b) {
+	var result = a + b;
+	return result;
+}
+// Using the return
+var x  = addTwoNumbers(5, 10);
+alert(x);
