@@ -103,3 +103,31 @@ if (balance >= 0) {
 } else {
     alert("The balance is not positive");
 }
+
+// Comparsion Operator
+// == is equal
+// === strict equality, meaning check the equality of the values and also check for identical data type
+// !== not strictly equal
+// != not equal
+// > greater than
+// < less than
+// >= greater than or equal to 
+// <= less than or equal to
+// && [and]both must be true
+// || [or]one must be true
+var a = 123;
+var b = "123";
+// equality check
+// Yes they are equal
+if ( a == b ) {
+   alert("Yes, they ARE equal");
+} else {
+   alert("No, they're NOT equal");
+}  
+// strict equality check
+// OUTPUTS No they are not equal
+if ( a === b ) {
+    alert("Yes, they ARE equal");
+ } else {
+    alert("No, they're NOT equal");
+ }
