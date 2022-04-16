@@ -38,3 +38,12 @@ var year;
 year = 2011; // assigned to integer
 year = "Hello"; // assigned to String
 year = true; // assigned to bool
+
+// Variables: Numbers
+// we can easly assign and create numbers by just writing it down
+var a;
+a = 5;
+a = 1000000;
+a = 123.654;
+a = -500;
+
