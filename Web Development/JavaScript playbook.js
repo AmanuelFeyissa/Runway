@@ -19,5 +19,14 @@
 	</body>
 </html>
 
-
+// Requesting input and printing output
+// Output
+// we use the alert() function to print out on our web browser
+alert("Hello World");
+// Input
+// we use the prompt() function to request an input and wait for a response
+prompt("What is your name? "); // Waits for response
+// Using input and output
+var fName = prompt("What is your your full name? ");
+alert("Hello " + fName);
 
