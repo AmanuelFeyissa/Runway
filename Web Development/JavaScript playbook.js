@@ -47,3 +47,9 @@ a = 1000000;
 a = 123.654;
 a = -500;
 
+// Variables: Strings and characters
+// use double qutoes to hold strings
+var message = "Hello, World";
+var anotherVariable = 'Hello, World';
+// We use the escape operator \ to make what comes next the same as other strings, or to not make it a special key
+var more = "Hello it\'s me";
