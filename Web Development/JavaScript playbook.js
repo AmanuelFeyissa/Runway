@@ -68,3 +68,13 @@ a = a + 1;
 a++; // Increment
 a--; // Decrement
 
+// Whitespace
+// JS does not care about how we use whitespace
+// Best Practices
+var a = 5;
+a++;
+var x = true;
+// String is different and is affected by whitespace
+var fName = prompt("What is ur name?");
+// \n line break or new line used in a string
+var hel = "Hello \n World";
