@@ -173,3 +173,14 @@ function addTwoNumbers(a, b) {
 // Using the return
 var x  = addTwoNumbers(5, 10);
 alert(x);
+
+// Variable scope
+// Global variable
+var y;
+function addTwoNumbers(a, b) {
+	// x is only available inside this function
+    // local variable
+    var x = a + b;
+    y = 500; // Global variable
+	return x;
+}
