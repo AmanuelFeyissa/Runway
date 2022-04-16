@@ -31,3 +31,10 @@ prompt("What is your name? "); // Waits for response
 var fName = prompt("What is your your full name? ");
 alert("Hello " + fName);
 
+// Variables
+// To create a variable we use the keyword var
+// var is dynamic meaning we can set the variable to any kind of data value, like integer, double, String
+var year;
+year = 2011; // assigned to integer
+year = "Hello"; // assigned to String
+year = true; // assigned to bool
