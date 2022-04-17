@@ -200,3 +200,12 @@ function addTwoNumbers(a, b) {
         <script src="Functions/functions.js"></script>
 	</body>
 </html>
+
+// Iteration
+// While loop
+// Syntax
+var a = 1;
+while (a < 10) {
+    alert(a);
+    a++;
+}
