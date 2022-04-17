@@ -221,3 +221,16 @@ do {
     // Code goes here
     a++;
 } while (a < 10);
+
+// More on Strings
+Number(a); // change to a number function
+// if we try to add string and number, it will be concatenated not added
+isNaN(a) // Returns a Boolean value that indicates whether a value is the reserved value NaN (not a number).
+var phrase = "Hello";
+phrase.length; // tells as the length of the variable
+phrase.toUpperCase; // changes the variable to upper case
+phrase.indexOf("Hello"); // Returns the position of the first occurrence of a substring.
+phrase.lastIndexOf("Hello"); // Returns the last occurrence of a substring in the string.
+phrase.slice(0,3); // Returns a section of a string. // use also .substring() .substr()
+
+
