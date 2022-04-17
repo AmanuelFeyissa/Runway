@@ -214,3 +214,10 @@ while (a < 10) {
 for (var i = 1; i < 10; i++){
     // Code goes here
 }
+
+// Do While loop
+var a = 1;
+do {
+    // Code goes here
+    a++;
+} while (a < 10);
