@@ -209,3 +209,8 @@ while (a < 10) {
     alert(a);
     a++;
 }
+
+// For Loop
+for (var i = 1; i < 10; i++){
+    // Code goes here
+}
