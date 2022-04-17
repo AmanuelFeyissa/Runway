@@ -233,4 +233,27 @@ phrase.indexOf("Hello"); // Returns the position of the first occurrence of a su
 phrase.lastIndexOf("Hello"); // Returns the last occurrence of a substring in the string.
 phrase.slice(0,3); // Returns a section of a string. // use also .substring() .substr()
 
-
+// Regualr expressions
+// is used when we want to check if some input is how we want it to be like checking if password has letters
+// creating regular expressions
+var myRE = /hello/; // / regular expression / we use a forward slash
+// or
+var myRE = new RegExp("hello");
+// checking
+var myString = "Does this string have a hello word in it?";
+// .test() is a function used to check the regular expression against the data given in this case myString
+// .test() Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
+if( myRE.test(myString)) {
+    alert("yes");
+}
+// Special characters are used to check specifically
+var myRE = /^hello/; // ^ hello must be at the start
+var myRE = /hello$/; // $ hello must be at the end
+var myRE = /hel+o/; // + l must appear once or more
+var myRE = /hel*o/; // * l must appear zero or more
+var myRE = /hel?o/; // ? l must appear zero or one
+var myRE = /hello|goodbye/; // | match hello or goodbye // either|or
+var myRE = /he..o/; // match any character
+var myRE = /\wello/; // \w alphanumeric or _
+var myRE = /\bhello/; // \b word boundary
+var myRE = /[crnld]ope/; // [...] match range of characters
