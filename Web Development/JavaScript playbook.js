@@ -257,3 +257,30 @@ var myRE = /he..o/; // match any character
 var myRE = /\wello/; // \w alphanumeric or _
 var myRE = /\bhello/; // \b word boundary
 var myRE = /[crnld]ope/; // [...] match range of characters
+
+// Array
+// a collection of related values contained in one variable
+// Creating an array
+var newArray = []; // initiallizing
+newArray[0] = 50; // INT
+newArray[1] = "hELLO"; // STRING
+// or
+var newArray = [50, "hello"];
+// Calling or getting array value
+newArray[0]; // we can alert it
+
+// Array properties
+newArray.length; // whats the length of the array
+newArray.reverse(); // reverse the values position, "hello", 50
+newArray.sort(); // sorts if it is a number, puts it alphabetically if it is string
+newArray.join(); // Adds all the elements of an array into a string, separated by the specified separator string.
+newArray.pop(); // Removes the last element from an array and returns it
+newArray.push(); // Appends new elements to the end of an array, and returns the new length of the array.
+
+// Itrating through array
+var i = 0;
+while (i < newArray.length) {
+    // checking and outputing every index of the array
+    alert("the value" + newArray[i]);
+    i++;
+}
