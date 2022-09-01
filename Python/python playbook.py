@@ -341,7 +341,7 @@ some_dic = {
 }
 # Nesting Dictionary IN Dictionary
 some_dic = {
-    {"Berlin": "Capital City", "Hamburg": "Beautiful city"}
+    {"Berlin": "Capital City", "Hamburg": "Beautiful city"},
     {"France": "Capital City"}
 }
 # Nesting Dictionary in a list
